@@ -5,21 +5,27 @@ import CodeCard from './CodeCard.vue';
 
 <template>
   <Card 
-    title="Explore vocabularies... in a Jupyter Notebook?" 
+    title="Explore vocabularies, in a Jupyter Notebook?" 
     contentClass="bg-amber-100/40 dark:bg-zinc-800/30"
   >
     <p class="text-sm lg:text-base">
-      By providing a dictionary, etc. It is feasible for users to learn English inside a program.
+      This python package features:
     </p>
-    <br>  
+    <br>
+    <ul class="list-disc pl-4">
+      <li>English Dictionary</li>
+      <li>Text-to-Speech & Speech-to-Text functions</li>
+      <li>CEFR Vocabulary Level Scanner for English Documents</li>
+    </ul>
+    <br> 
     <p class="text-sm lg:text-base">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum magnam vitae accusantium nostrum velit nihil vel quo maiores explicabo tempora!
+      This python package aims to provide a new platform for students to learn English, widen their linguistic variety and range of vocabularies.
     </p>
   </Card>
   <Card 
-    title="Prerequisite"
+    title="Requirements"
   >
-    <p class="text-sm lg:text-base">Install <a href="https://nodejs.org/">Node.js</a> (>= v24.12.0) on your computer:</p>
+    <p class="text-sm lg:text-base">Install <a href="https://www.python.org/">Python</a> (>= v3.10) on your computer:</p>
 
     <br>
 
