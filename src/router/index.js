@@ -1,9 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 import HomeView from '@/views/HomeView.vue'
-import Path from '@/views/Path.vue'
-import Destination from '@/views/Destination.vue'
-import Route from '@/views/Route.vue'
+
+import Documentations from '@/views/Documentations.vue'
+import About from '@/views/About.vue'
+
+import Installation from '@/views/docs/Installation.vue'
+import MainApplication from '@/views/docs/MainApplication.vue'
+import CoreFunctions from '@/views/docs/main/CoreFunctions.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -14,19 +18,37 @@ const router = createRouter({
       component: HomeView,
     },
     {
-      path: '/path',
-      name: 'path',
-      component: Path,
+      path: '/about',
+      name: 'about',
+      component: About,
     },
     {
-      path: '/dest',
-      name: 'destination',
-      component: Destination,
-    },
-    {
-      path: '/route',
-      name: 'route',
-      component: Route,
+      path: '/docs',
+      name: 'docs',
+      component: Documentations,
+      redirect: { name: 'docs-installation' },
+      children: [
+        {
+          path: 'installation',
+          name: 'docs-installation',
+          component: Installation,
+        },
+        {
+          path: 'main-app',
+          children: [
+            {
+              path: '',
+              name: 'main-application',
+              component: MainApplication,
+            },
+            {
+              path: 'core-functions',
+              name: 'core-functions',
+              component: CoreFunctions,
+            },
+          ],
+        },
+      ],
     },
   ],
 })
