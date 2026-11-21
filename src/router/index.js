@@ -7,7 +7,9 @@ import About from '@/views/About.vue'
 
 import Installation from '@/views/docs/Installation.vue'
 import MainApplication from '@/views/docs/MainApplication.vue'
-import CoreFunctions from '@/views/docs/main/CoreFunctions.vue'
+import CoreFunctions from '@/views/docs/CoreFunctions.vue'
+import Lookup from '@/views/docs/deck/Lookup.vue'
+import Review from '@/views/docs/deck/Review.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -26,25 +28,37 @@ const router = createRouter({
       path: '/docs',
       name: 'docs',
       component: Documentations,
-      redirect: { name: 'docs-installation' },
+      redirect: { name: 'installation' },
       children: [
         {
           path: 'installation',
-          name: 'docs-installation',
+          name: 'installation',
           component: Installation,
         },
         {
           path: 'main-app',
+          name: 'main-app',
+          component: MainApplication,
+        },
+        {
+          path: 'core-functions',
+          name: 'core-functions',
+          component: CoreFunctions,
+        },
+        {
+          path: 'card-deck',
+          name: 'card-deck',
+          redirect: { name: 'lookup-and-add' },
           children: [
             {
-              path: '',
-              name: 'main-application',
-              component: MainApplication,
+              path: 'lookup-and-add',
+              name: 'lookup-and-add',
+              component: Lookup,
             },
             {
-              path: 'core-functions',
-              name: 'core-functions',
-              component: CoreFunctions,
+              path: 'review',
+              name: 'review',
+              component: Review,
             },
           ],
         },

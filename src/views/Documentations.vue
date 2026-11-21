@@ -1,17 +1,15 @@
 <script setup>
 import { RouterView, RouterLink } from 'vue-router'
-// ADDED: Imports for shared drawer state, theme icons, and closing on route change
+
 import { watch } from 'vue'
 import { useRoute } from 'vue-router'
 import { useTheme } from '@/composables/useTheme'
 import { useDocsSidebar } from '@/composables/useDocsSidebar'
 
-// ADDED: Access shared docs sidebar state and dark mode toggle for icons
 const route = useRoute()
 const { isDark } = useTheme()
 const { isDocsSidebarOpen, closeDocsSidebar } = useDocsSidebar()
 
-// ADDED: Automatically close the mobile sidebar drawer after navigating
 watch(
   () => route.fullPath,
   () => {
@@ -28,9 +26,16 @@ const sidebarSections = [
     heading: 'Main Application',
     links: [
       { label: 'Getting started', to: '/docs/main-app' },
-      { label: 'Core functions', to: '/docs/main-app/core-functions' },
+      { label: 'Core functions', to: '/docs/core-functions' },
     ],
   },
+  {
+    heading: 'Card Deck',
+    links: [
+      { label: 'Lookup and add words to the deck', to: '/docs/card-deck/lookup-and-add' },
+      { label: 'Reviewing the card deck', to: '/docs/card-deck/review' },
+    ]
+  }
 ]
 </script>
 
@@ -61,7 +66,7 @@ const sidebarSections = [
     </aside>
 
     <!-- Contents -->
-    <main class="min-w-0 flex-1 px-12 py-12 sm:px-20 lg:px-16 xl:px-24">
+    <main class="min-w-0 flex-1 px-8 py-12 sm:px-15 lg:px-16 xl:px-24">
       <div class="max-w-4xl">
         <RouterView />
       </div>
@@ -85,7 +90,7 @@ const sidebarSections = [
         />
       </Transition>
 
-      <!-- ADDED: Slide-out sidebar drawer -->
+
       <Transition
         enter-active-class="transition-transform duration-300 ease-out"
         enter-from-class="-translate-x-full"
@@ -98,7 +103,7 @@ const sidebarSections = [
           v-if="isDocsSidebarOpen"
           class="fixed inset-y-0 left-0 z-70 w-68 max-w-[80vw] overflow-y-auto border-r border-[#6666664f] bg-orange-50 px-6 py-6 shadow-xl lg:hidden dark:bg-zinc-900"
         >
-          <!-- ADDED: Drawer header with themed rounded cross button -->
+
           <div class="mb-6 flex items-center justify-between">
             <span class="text-sm font-semibold">Documentation</span>
             <button
@@ -111,7 +116,6 @@ const sidebarSections = [
             </button>
           </div>
 
-          <!-- ADDED: Navigation links mirroring the desktop sidebar -->
           <nav aria-label="Mobile documentation navigation" class="space-y-8">
             <div v-for="section in sidebarSections" :key="section.heading">
               <p class="mb-2.5 px-3 text-xs font-semibold">
