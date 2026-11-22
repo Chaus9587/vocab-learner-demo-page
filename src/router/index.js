@@ -12,6 +12,7 @@ import Lookup from '@/views/docs/deck/Lookup.vue'
 import Review from '@/views/docs/deck/Review.vue'
 
 const router = createRouter({
+  scrollBehavior: () => ({ top: 0 }),
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {

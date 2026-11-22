@@ -1,7 +1,7 @@
 <script setup>
 import { RouterView, RouterLink } from 'vue-router'
 
-import { watch } from 'vue'
+import { ref, onMounted, onUnmounted, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import { useTheme } from '@/composables/useTheme'
 import { useDocsSidebar } from '@/composables/useDocsSidebar'
@@ -9,6 +9,7 @@ import { useDocsSidebar } from '@/composables/useDocsSidebar'
 const route = useRoute()
 const { isDark } = useTheme()
 const { isDocsSidebarOpen, closeDocsSidebar } = useDocsSidebar()
+const showScrollTop = ref(false)
 
 watch(
   () => route.fullPath,
@@ -16,6 +17,26 @@ watch(
     closeDocsSidebar()
   },
 )
+
+const handleScroll = () => {
+  showScrollTop.value = window.scrollY > 300
+}
+
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  })
+}
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll, { passive: true })
+  handleScroll()
+})
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll)
+})
 
 const sidebarSections = [
   {
@@ -138,5 +159,24 @@ const sidebarSections = [
         </aside>
       </Transition>
     </Teleport>
+
+    <!-- Scroll to top button -->
+    <Transition
+      enter-active-class="transition duration-200 ease-out"
+      enter-from-class="opacity-0 translate-y-3 scale-90"
+      enter-to-class="opacity-100 translate-y-0 scale-100"
+      leave-active-class="transition duration-150 ease-in"
+      leave-from-class="opacity-100 translate-y-0 scale-100"
+      leave-to-class="opacity-0 translate-y-3 scale-90"
+    >
+      <button
+        v-if="showScrollTop"
+        @click="scrollToTop"
+        aria-label="Back to top"
+        class="fixed right-6 bottom-6 z-40 flex size-11 items-center justify-center rounded-full border border-[#6666664f] bg-orange-100/80 shadow-md backdrop-blur-md transition duration-200 ease-in-out hover:scale-110 hover:cursor-pointer hover:bg-orange-200/80 sm:right-10 sm:bottom-10 dark:bg-zinc-800/85 dark:hover:bg-zinc-700"
+      >
+        <img src="@/assets/up.svg" alt="" class="size-5 dark:invert" />
+      </button>
+    </Transition>
   </div>
 </template>

@@ -33,7 +33,36 @@ import CodeCard from '@/components/CodeCard.vue'
     </p>
     <br>
     <p class="text-sm lg:text-base">Click on each functions to delve deeper about them.</p>
-    <br /><br>
+    <br><br>
+
+
+    <h2 class="origin-left scale-x-95 pb-6 text-[2rem]/10 font-medium lg:text-4xl scroll-mt-28" id="meaning">Review system</h2>
+    <section class="mb-12">
+      <p class="text-sm lg:text-base">In the review system, the app will:</p><br>
+      <ul class="list-disc pl-4">
+        <li>Randomly draw a card from the deck, and give the task for you to do based on the review mode. </li>
+        <li>Repeat this until all cards have drawn once.</li>
+      </ul>
+      <br>
+      <p class="text-sm lg:text-base">If you finish the task correctly. The app will:</p><br>
+      <ul class="list-disc pl-4">
+        <li>The app moves on to pick another random card.</li>
+        <li>You gain 1 point.</li>
+      </ul>
+      <br>
+      <p class="text-sm lg:text-base">Vice versa:</p><br>
+      <ul class="list-disc pl-4">
+        <li>
+          That word will be reviewed again at the end of the review session. Then, the app moves on
+          to pick another random card.
+        </li>
+        <li>You gain no points, even when you remembered it when it appears again.</li>
+      </ul>
+      
+
+    </section>
+
+    
     <h2 class="origin-left scale-x-95 pb-6 text-[2rem]/10 font-medium lg:text-4xl scroll-mt-28" id="meaning">1: Meaning</h2>
     <div>
       <p class="text-sm lg:text-base">
