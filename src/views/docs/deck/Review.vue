@@ -44,11 +44,26 @@ import CodeCard from '@/components/CodeCard.vue'
         <li>Repeat this until all cards have drawn once.</li>
       </ul>
       <br>
+      <CodeCard location="Terminal">
+        <pre class="font-code whitespace-pre text-[#5C6166] dark:text-[#BFBDB6]"><span class="text-[#787B80]/55 dark:text-[#ACB6BF]/45">───</span> <span class="font-bold text-[#4CBF99] dark:text-[#95E6CB]">Card 1 of 3</span> <span class="text-[#787B80]/55 dark:text-[#ACB6BF]/45">────────────────────────────────────────────</span>
+...
+<span class="text-[#787B80]/55 dark:text-[#ACB6BF]/45">───</span> <span class="font-bold text-[#4CBF99] dark:text-[#95E6CB]">Card 2 of 3</span> <span class="text-[#787B80]/55 dark:text-[#ACB6BF]/45">────────────────────────────────────────────</span>
+...
+<span class="text-[#787B80]/55 dark:text-[#ACB6BF]/45">───</span> <span class="font-bold text-[#4CBF99] dark:text-[#95E6CB]">Card 3 of 3</span> <span class="text-[#787B80]/55 dark:text-[#ACB6BF]/45">────────────────────────────────────────────</span>
+...     
+</pre>
+      </CodeCard>
+      <br>
       <p class="text-sm lg:text-base">If you finish the task correctly. The app will:</p><br>
       <ul class="list-disc pl-4">
         <li>The app moves on to pick another random card.</li>
         <li>You gain 1 point.</li>
+        <li>Next review of this word card will be in 2 days.</li>
       </ul>
+      <CodeCard location="Terminal">
+        <pre class="font-code whitespace-pre text-[#5C6166] dark:text-[#BFBDB6]"><span class="font-bold text-[#86B300] dark:text-[#AAD94C]">Correct!</span>
+<span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">Box 2 · next review in 2 days</span></pre>
+      </CodeCard>
       <br>
       <p class="text-sm lg:text-base">Vice versa:</p><br>
       <ul class="list-disc pl-4">
@@ -57,8 +72,19 @@ import CodeCard from '@/components/CodeCard.vue'
           to pick another random card.
         </li>
         <li>You gain no points, even when you remembered it when it appears again.</li>
+        <li>Next review of this word card will be in 1 day.</li>
       </ul>
-      
+      <br>
+      <CodeCard location="Terminal">
+        <pre class="font-code whitespace-pre text-[#5C6166] dark:text-[#BFBDB6]"><span class="font-bold text-[#86B300] dark:text-[#AAD94C]">Incorrect</span>
+<span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">Box 2 · next review in 1 day</span></pre>
+      </CodeCard>
+      <CodeCard location="Terminal">
+        <pre class="font-code whitespace-pre text-[#5C6166] dark:text-[#BFBDB6]"><span class="text-[#787B80]/55 dark:text-[#ACB6BF]/45">───</span> <span class="font-bold text-[#4CBF99] dark:text-[#95E6CB]">Card 3 of 3</span> <span class="text-[#787B80]/55 dark:text-[#ACB6BF]/45">────────────────────────────────────────────</span>
+...     
+<span class="text-[#787B80]/55 dark:text-[#ACB6BF]/45">───</span> <span class="font-bold text-[#4CBF99] dark:text-[#95E6CB]">Try again</span> <span class="text-[#787B80]/55 dark:text-[#ACB6BF]/45">────────────────────────────────────────────</span>
+...     </pre>
+      </CodeCard>
 
     </section>
 
@@ -66,7 +92,7 @@ import CodeCard from '@/components/CodeCard.vue'
     <h2 class="origin-left scale-x-95 pb-6 text-[2rem]/10 font-medium lg:text-4xl scroll-mt-28" id="meaning">1: Meaning</h2>
     <div>
       <p class="text-sm lg:text-base">
-        Entering 1 starts the reviewing process. The app will pick a random word card from the deck:
+        Entering 1 starts the meaning reviewing process. The app will pick a random word card from the deck:
       </p>
       <CodeCard location="Terminal">
         <pre
@@ -127,6 +153,7 @@ Definitions of <span class="font-bold text-[#A37ACC] dark:text-[#D2A6FF]">"consp
       <ul class="list-disc pl-4">
         <li>The app moves on to pick another random card</li>
         <li>You gain 1 point</li>
+        
       </ul>
       <br />
       <p class="text-sm lg:text-base">If you don't remember the word:</p>
