@@ -19,7 +19,7 @@ watch(
 )
 
 const handleScroll = () => {
-  showScrollTop.value = window.scrollY > 300
+  showScrollTop.value = window.scrollY > 200
 }
 
 const scrollToTop = () => {
