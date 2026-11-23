@@ -1,6 +1,6 @@
 <script setup>
 import CodeCard from '@/components/CodeCard.vue'
-import InlineCode from '@/components/InlineCode.vue';
+import InlineCode from '@/components/InlineCode.vue'
 </script>
 
 <template>
@@ -23,6 +23,8 @@ import InlineCode from '@/components/InlineCode.vue';
   <span class="font-bold">5.</span> Progress
   <span class="font-bold">6.</span> Export deck to CSV
   <span class="font-bold">7.</span> Remove words
+  <span class="font-bold">8.</span> Edit a card
+  <span class="font-bold">9.</span> Practise one word
 
   <span class="font-bold">c.</span> Clear the screen
   <span class="font-bold">q.</span> Quit
@@ -32,15 +34,18 @@ import InlineCode from '@/components/InlineCode.vue';
       <p class="text-sm lg:text-base">Click on each functions to delve deeper about them.</p>
     </section>
 
-    <h2 class="origin-left scale-x-95 pb-6 text-[2rem]/10 font-medium lg:text-4xl scroll-mt-28">Card Deck for Vocabularies</h2>
+    <h2 class="origin-left scale-x-95 scroll-mt-28 pb-6 text-[2rem]/10 font-medium lg:text-4xl">
+      Card Deck for Vocabularies
+    </h2>
     <section class="mb-16">
       <p class="w-[105.26%] text-sm lg:text-base">
-        <InlineCode class="inline-block scale-x-[1.0526] origin-left mr-5">word-flashcard-vocab-learner</InlineCode>
-        features a card deck that allow users to save, load, and revise searched words. It aims to help users to memorize vocabularies quickly, and develop a wider lexical choice.
+        <InlineCode class="mr-5 inline-block origin-left scale-x-[1.0526]"
+          >word-flashcard-vocab-learner</InlineCode
+        >
+        features a card deck that allow users to save, load, and revise searched words. It aims to
+        help users to memorize vocabularies quickly, and develop a wider lexical choice.
       </p>
-      <br><br>
-      
-    
+      <br /><br />
     </section>
   </article>
 </template>

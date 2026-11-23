@@ -45,9 +45,7 @@ onUnmounted(() => {
     :class="showBorder ? 'border-b-[#6666664f]' : 'border-b-transparent'"
   >
     <nav class="flex h-17.75 items-center justify-between px-8 sm:px-16 md:px-24 lg:px-30 xl:px-42">
-
       <div class="flex items-center gap-4">
-
         <button
           v-if="isDocsPage"
           @click="toggleDocsSidebar()"

@@ -10,6 +10,8 @@ import MainApplication from '@/views/docs/MainApplication.vue'
 import CoreFunctions from '@/views/docs/CoreFunctions.vue'
 import Lookup from '@/views/docs/deck/Lookup.vue'
 import Review from '@/views/docs/deck/Review.vue'
+import ImportCards from '@/views/docs/deck/ImportCards.vue'
+import ViewDeck from '@/views/docs/deck/ViewDeck.vue'
 
 const router = createRouter({
   scrollBehavior: () => ({ top: 0 }),
@@ -60,6 +62,16 @@ const router = createRouter({
               path: 'review',
               name: 'review',
               component: Review,
+            },
+            {
+              path: 'import-cards',
+              name: 'import-cards',
+              component: ImportCards,
+            },
+            {
+              path: 'view-deck',
+              name: 'view-deck',
+              component: ViewDeck,
             },
           ],
         },

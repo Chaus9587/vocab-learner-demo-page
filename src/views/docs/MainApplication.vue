@@ -35,7 +35,9 @@ import CodeCard from '@/components/CodeCard.vue'
 <span class="font-bold text-[#EBA400] dark:text-[#FFB454]">Choose:</span></pre>
       </CodeCard>
       <br />
-      <p class="text-sm lg:text-base">Use the keyboard keys to control the applications. (i.e. 1-7, c, q in this menu)</p>
+      <p class="text-sm lg:text-base">
+        Use the keyboard keys to control the applications. (i.e. 1-7, c, q in this menu)
+      </p>
     </section>
   </article>
 </template>

@@ -55,8 +55,13 @@ const sidebarSections = [
     links: [
       { label: 'Lookup and add words to the deck', to: '/docs/card-deck/lookup-and-add' },
       { label: 'Reviewing the card deck', to: '/docs/card-deck/review' },
-    ]
-  }
+      {
+        label: 'Import word cards to deck by scanning documents',
+        to: '/docs/card-deck/import-cards',
+      },
+      { label: "View the card deck's status", to: '/docs/card-deck/view-deck' },
+    ],
+  },
 ]
 </script>
 
@@ -111,7 +116,6 @@ const sidebarSections = [
         />
       </Transition>
 
-
       <Transition
         enter-active-class="transition-transform duration-300 ease-out"
         enter-from-class="-translate-x-full"
@@ -124,7 +128,6 @@ const sidebarSections = [
           v-if="isDocsSidebarOpen"
           class="fixed inset-y-0 left-0 z-70 w-68 max-w-[80vw] overflow-y-auto border-r border-[#6666664f] bg-orange-50 px-6 py-6 shadow-xl lg:hidden dark:bg-zinc-900"
         >
-
           <div class="mb-6 flex items-center justify-between">
             <span class="text-sm font-semibold">Documentation</span>
             <button

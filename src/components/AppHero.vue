@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex max-h-[90vh] md:justify-around gap-18 px-8 py-24 sm:px-20 md:px-25 lg:gap-30 lg:px-35 lg:py-25 xl:gap-36 xl:px-48"
+    class="flex max-h-[90vh] gap-18 px-8 py-24 sm:px-20 md:justify-around md:px-25 lg:gap-30 lg:px-35 lg:py-25 xl:gap-36 xl:px-48"
   >
     <section class="flex flex-col justify-center">
       <p class="font-light text-neutral-700/60 dark:text-neutral-500">Designed by Chaus9587</p>

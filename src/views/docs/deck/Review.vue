@@ -1,6 +1,6 @@
 <script setup>
 import CodeCard from '@/components/CodeCard.vue'
-import InlineCode from '@/components/InlineCode.vue';
+import InlineCode from '@/components/InlineCode.vue'
 
 const scrollToHeading = (id) => {
   document.getElementById(id)?.scrollIntoView()
@@ -14,7 +14,6 @@ const scrollToHeading = (id) => {
   </h1>
   <article>
     <section>
-
       <p class="text-sm lg:text-base">
         Type 2 in the input section allows you to review the cards in the card deck:
       </p>
@@ -36,16 +35,15 @@ const scrollToHeading = (id) => {
 <span class="text-[#EBA400] dark:text-[#FFB454]">Choose a mode (Enter = 1, q = back):</span></pre>
       </CodeCard>
       <p class="text-sm lg:text-base">
-        Suppose the deck hold words 'dilemma', 'conspiracy', and 'status quo' as shown in the provious section.
+        Suppose the deck hold words 'dilemma', 'conspiracy', and 'status quo' as shown in the
+        provious section.
       </p>
       <br />
       <p class="text-sm lg:text-base">Click on each functions to delve deeper about them.</p>
       <br /><br />
     </section>
 
-    <h2
-      class="origin-left scale-x-95 scroll-mt-28 pb-6 text-[2rem]/10 font-medium lg:text-4xl"
-    >
+    <h2 class="origin-left scale-x-95 scroll-mt-28 pb-6 text-[2rem]/10 font-medium lg:text-4xl">
       Review system
     </h2>
     <section class="mb-12">
@@ -110,8 +108,8 @@ const scrollToHeading = (id) => {
 <span class="text-[#787B80]/55 dark:text-[#ACB6BF]/45">───</span> <span class="font-bold text-[#4CBF99] dark:text-[#95E6CB]">Try again</span> <span class="text-[#787B80]/55 dark:text-[#ACB6BF]/45">────────────────────────────────────────────</span>
 ...     </pre>
       </CodeCard>
-      <br>
-      <p class="text-sm lg:text-base">After the review. The app gives back the session details: </p>
+      <br />
+      <p class="text-sm lg:text-base">After the review. The app gives back the session details:</p>
       <CodeCard location="Terminal">
         <pre
           class="font-code whitespace-pre text-[#5C6166] dark:text-[#BFBDB6]"
@@ -122,7 +120,7 @@ const scrollToHeading = (id) => {
   <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">Wrong</span>     <span class="font-bold text-[#E65050] dark:text-[#F07178]">1</span>
   <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">Score</span>     <span class="font-bold">67%</span>
   
-  <span class="text-[#787B80]/55 dark:text-[#ACB6BF]/45">───</span> <span class="font-bold text-[#4CBF99] dark:text-[#95E6CB]">Main menu</span> <span class="text-[#787B80]/55 dark:text-[#ACB6BF]/45">──────────────────────────────────────────────</span>
+<span class="text-[#787B80]/55 dark:text-[#ACB6BF]/45">───</span> <span class="font-bold text-[#4CBF99] dark:text-[#95E6CB]">Main menu</span> <span class="text-[#787B80]/55 dark:text-[#ACB6BF]/45">──────────────────────────────────────────────</span>
   
   <span class="font-bold">1.</span> Look up and add words
   <span class="font-bold">2.</span> Review cards
@@ -131,15 +129,21 @@ const scrollToHeading = (id) => {
   <span class="font-bold">5.</span> Progress
   <span class="font-bold">6.</span> Export deck to CSV
   <span class="font-bold">7.</span> Remove words
+  <span class="font-bold">8.</span> Edit a card
+  <span class="font-bold">9.</span> Practise one word
   
   <span class="font-bold">c.</span> Clear the screen
   <span class="font-bold">q.</span> Quit
   
-  <span class="font-bold text-[#EBA400] dark:text-[#FFB454]">Choose:</span></pre>
+<span class="font-bold text-[#EBA400] dark:text-[#FFB454]">Choose:</span></pre>
       </CodeCard>
-      <p class="text-sm lg:text-base">IMPORTANT: You cannot review those cards until the card's next review date.</p>
-      <br>
-      <p class="text-sm lg:text-base">You can still practise the word cards in the deck if needed:</p>
+      <p class="text-sm lg:text-base">
+        IMPORTANT: You cannot review those cards until the card's next review date.
+      </p>
+      <br />
+      <p class="text-sm lg:text-base">
+        You can still practise the word cards in the deck if needed:
+      </p>
       <CodeCard location="Terminal">
         <pre class="font-code whitespace-pre text-[#5C6166] dark:text-[#BFBDB6]">...
 
@@ -152,8 +156,10 @@ const scrollToHeading = (id) => {
 
 <span class="text-[#EBA400] dark:text-[#FFB454]">Practise all cards anyway? Your progress will not change. (y/N)</span></pre>
       </CodeCard>
-      <br>
-      <p class="text-sm lg:text-base">You can check your card deck's status in <InlineCode>4. View my deck</InlineCode> section.</p>
+      <br />
+      <p class="text-sm lg:text-base">
+        You can check your card deck's status in <InlineCode>4. View my deck</InlineCode> section.
+      </p>
     </section>
 
     <h2
@@ -222,7 +228,10 @@ Definitions of <span class="font-bold text-[#A37ACC] dark:text-[#D2A6FF]">"consp
       </CodeCard>
       <br />
 
-      <p class="text-sm lg:text-base">Then, input whether you remember the word's definition or not. 1 pt if you remember, 0 pts if you forgot, and the card will appear again in the end.</p>
+      <p class="text-sm lg:text-base">
+        Then, input whether you remember the word's definition or not. 1 pt if you remember, 0 pts
+        if you forgot, and the card will appear again in the end.
+      </p>
       <br />
 
       <CodeCard location="Terminal">
@@ -291,7 +300,6 @@ Definitions of <span class="font-bold text-[#A37ACC] dark:text-[#D2A6FF]">"consp
       <p class="text-sm lg:text-base">
         After reviewing all cards, the app will summarize this session.
       </p>
-      
     </section>
 
     <h2
@@ -306,7 +314,9 @@ Definitions of <span class="font-bold text-[#A37ACC] dark:text-[#D2A6FF]">"consp
         the deck:
       </p>
       <CodeCard location="Terminal">
-        <pre class="font-code whitespace-pre text-[#5C6166] dark:text-[#BFBDB6]"><span class="text-[#787B80]/55 dark:text-[#ACB6BF]/45">───</span> <span class="font-bold text-[#4CBF99] dark:text-[#95E6CB]">Card 1 of 3</span> <span class="text-[#787B80]/55 dark:text-[#ACB6BF]/45">────────────────────────────────────────────</span>
+        <pre
+          class="font-code whitespace-pre text-[#5C6166] dark:text-[#BFBDB6]"
+        ><span class="text-[#787B80]/55 dark:text-[#ACB6BF]/45">───</span> <span class="font-bold text-[#4CBF99] dark:text-[#95E6CB]">Card 1 of 3</span> <span class="text-[#787B80]/55 dark:text-[#ACB6BF]/45">────────────────────────────────────────────</span>
 
 <span class="font-bold">Clues:</span>
 
@@ -317,11 +327,16 @@ Definitions of <span class="font-bold text-[#A37ACC] dark:text-[#D2A6FF]">"consp
 
 <span class="font-bold text-[#EBA400] dark:text-[#FFB454]">Type the word (q = stop):</span></pre>
       </CodeCard>
-      <br>
+      <br />
 
-      <p class="text-sm lg:text-base">Then, input the spelling of the word. 1 pt for correct answer, 0 pts for wrong answer and the card will appear again in the end.</p>
+      <p class="text-sm lg:text-base">
+        Then, input the spelling of the word. 1 pt for correct answer, 0 pts for wrong answer and
+        the card will appear again in the end.
+      </p>
       <CodeCard location="Terminal">
-        <pre class="font-code whitespace-pre text-[#5C6166] dark:text-[#BFBDB6]"><span class="font-bold text-[#EBA400] dark:text-[#FFB454]">Type the word (q = stop):</span> stats quo
+        <pre
+          class="font-code whitespace-pre text-[#5C6166] dark:text-[#BFBDB6]"
+        ><span class="font-bold text-[#EBA400] dark:text-[#FFB454]">Type the word (q = stop):</span> stats quo
 
 <span class="font-bold text-[#E65050] dark:text-[#F07178]">Not quite. The answer is "status quo".</span>
 
@@ -331,11 +346,13 @@ Definitions of <span class="font-bold text-[#A37ACC] dark:text-[#D2A6FF]">"statu
      state of affairs.
 <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">Box 1 · next review tomorrow</span></pre>
       </CodeCard>
-      <br>
+      <br />
 
       <p class="text-sm lg:text-base">The review process continues:</p>
       <CodeCard location="Terminal">
-        <pre class="font-code whitespace-pre text-[#5C6166] dark:text-[#BFBDB6]"><span class="text-[#787B80]/55 dark:text-[#ACB6BF]/45">───</span> <span class="font-bold text-[#4CBF99] dark:text-[#95E6CB]">Card 2 of 3</span> <span class="text-[#787B80]/55 dark:text-[#ACB6BF]/45">────────────────────────────────────────────</span>
+        <pre
+          class="font-code whitespace-pre text-[#5C6166] dark:text-[#BFBDB6]"
+        ><span class="text-[#787B80]/55 dark:text-[#ACB6BF]/45">───</span> <span class="font-bold text-[#4CBF99] dark:text-[#95E6CB]">Card 2 of 3</span> <span class="text-[#787B80]/55 dark:text-[#ACB6BF]/45">────────────────────────────────────────────</span>
 
 <span class="font-bold">Clues:</span>
 
@@ -372,10 +389,12 @@ Definitions of <span class="font-bold text-[#A37ACC] dark:text-[#D2A6FF]">"statu
 <span class="font-bold text-[#86B300] dark:text-[#AAD94C]">Correct!</span>
 <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">Box 2 · next review in 2 days</span></pre>
       </CodeCard>
-      <br>
+      <br />
       <p class="text-sm lg:text-base">Lastly, the 'try again' for incorrect cards:</p>
       <CodeCard location="Terminal">
-        <pre class="font-code whitespace-pre text-[#5C6166] dark:text-[#BFBDB6]"><span class="text-[#787B80]/55 dark:text-[#ACB6BF]/45">───</span> <span class="font-bold text-[#4CBF99] dark:text-[#95E6CB]">Try again</span> <span class="text-[#787B80]/55 dark:text-[#ACB6BF]/45">──────────────────────────────────────────────</span>
+        <pre
+          class="font-code whitespace-pre text-[#5C6166] dark:text-[#BFBDB6]"
+        ><span class="text-[#787B80]/55 dark:text-[#ACB6BF]/45">───</span> <span class="font-bold text-[#4CBF99] dark:text-[#95E6CB]">Try again</span> <span class="text-[#787B80]/55 dark:text-[#ACB6BF]/45">──────────────────────────────────────────────</span>
 
 <span class="font-bold">Clues:</span>
 
@@ -388,7 +407,7 @@ Definitions of <span class="font-bold text-[#A37ACC] dark:text-[#D2A6FF]">"statu
 
 <span class="font-bold text-[#86B300] dark:text-[#AAD94C]">Correct!</span></pre>
       </CodeCard>
-      <br>
+      <br />
       <p class="text-sm lg:text-base">
         After reviewing all cards, the app will summarize this session.
       </p>
@@ -402,36 +421,45 @@ Definitions of <span class="font-bold text-[#A37ACC] dark:text-[#D2A6FF]">"statu
     </h2>
     <section class="mb-12">
       <p class="text-sm lg:text-base">
-        Entering 3 starts the reviewing process in listening mode. The app will pick a random word card from
-        the deck and play the word's pronounciation:
+        Entering 3 starts the reviewing process in listening mode. The app will pick a random word
+        card from the deck and play the word's pronounciation:
       </p>
       <CodeCard location="Terminal">
-        <pre class="font-code whitespace-pre text-[#5C6166] dark:text-[#BFBDB6]"><span class="text-[#787B80]/55 dark:text-[#ACB6BF]/45">───</span> <span class="font-bold text-[#4CBF99] dark:text-[#95E6CB]">Card 1 of 3</span> <span class="text-[#787B80]/55 dark:text-[#ACB6BF]/45">────────────────────────────────────────────</span>
+        <pre
+          class="font-code whitespace-pre text-[#5C6166] dark:text-[#BFBDB6]"
+        ><span class="text-[#787B80]/55 dark:text-[#ACB6BF]/45">───</span> <span class="font-bold text-[#4CBF99] dark:text-[#95E6CB]">Card 1 of 3</span> <span class="text-[#787B80]/55 dark:text-[#ACB6BF]/45">────────────────────────────────────────────</span>
 
   <span class="text-[#4CBF99] dark:text-[#95E6CB]">Listen and type the word you hear.</span>
 
 <span class="font-bold text-[#EBA400] dark:text-[#FFB454]">Your answer (r = replay, q = stop):</span></pre>
       </CodeCard>
       <audio controls>
-        <source src="@/assets/status_quo.mp3">
+        <source src="@/assets/status_quo.mp3" />
       </audio>
-      <br>
+      <br />
       <p class="text-sm text-zinc-600 italic dark:text-zinc-400">
         Note: The audio will be automatically played. The audio file will be generated if it hasn't.
       </p>
-      <br>
+      <br />
 
-      <p class="text-sm lg:text-base">Then, input the spelling of the word. 1 pt for correct answer, 0 pts for wrong answer and the card will appear again in the end.</p>
+      <p class="text-sm lg:text-base">
+        Then, input the spelling of the word. 1 pt for correct answer, 0 pts for wrong answer and
+        the card will appear again in the end.
+      </p>
       <CodeCard location="Terminal">
-        <pre class="font-code whitespace-pre text-[#5C6166] dark:text-[#BFBDB6]"><span class="font-bold text-[#EBA400] dark:text-[#FFB454]">Your answer (r = replay, q = stop):</span> status quo
+        <pre
+          class="font-code whitespace-pre text-[#5C6166] dark:text-[#BFBDB6]"
+        ><span class="font-bold text-[#EBA400] dark:text-[#FFB454]">Your answer (r = replay, q = stop):</span> status quo
 
 <span class="font-bold text-[#86B300] dark:text-[#AAD94C]">Correct!</span>
 <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">Box 2 · next review in 2 days</span></pre>
       </CodeCard>
-      <br>
+      <br />
       <p class="text-sm lg:text-base">The reviewing process continues:</p>
       <CodeCard location="Terminal">
-        <pre class="font-code whitespace-pre text-[#5C6166] dark:text-[#BFBDB6]"><span class="text-[#787B80]/55 dark:text-[#ACB6BF]/45">───</span> <span class="font-bold text-[#4CBF99] dark:text-[#95E6CB]">Card 2 of 3</span> <span class="text-[#787B80]/55 dark:text-[#ACB6BF]/45">────────────────────────────────────────────</span>
+        <pre
+          class="font-code whitespace-pre text-[#5C6166] dark:text-[#BFBDB6]"
+        ><span class="text-[#787B80]/55 dark:text-[#ACB6BF]/45">───</span> <span class="font-bold text-[#4CBF99] dark:text-[#95E6CB]">Card 2 of 3</span> <span class="text-[#787B80]/55 dark:text-[#ACB6BF]/45">────────────────────────────────────────────</span>
 
   <span class="text-[#4CBF99] dark:text-[#95E6CB]">Listen and type the word you hear.</span>
 
@@ -469,8 +497,8 @@ Definitions of <span class="font-bold text-[#A37ACC] dark:text-[#D2A6FF]">"dilem
 
 <span class="font-bold text-[#EBA400] dark:text-[#FFB454]">Your answer (r = replay, q = stop):</span> dilemma
 
-<span class="font-bold text-[#86B300] dark:text-[#AAD94C]">Correct!</span></pre>
-      </CodeCard><br>
+<span class="font-bold text-[#86B300] dark:text-[#AAD94C]">Correct!</span></pre></CodeCard
+      ><br />
 
       <p class="text-sm lg:text-base">
         After reviewing all cards, the app will summarize this session.
@@ -486,12 +514,14 @@ Definitions of <span class="font-bold text-[#A37ACC] dark:text-[#D2A6FF]">"dilem
 
     <section class="mb-12">
       <p class="text-sm lg:text-base">
-        Entering 4 starts the reviewing process in speaking mode. The app will pick a random word card from
-        the deck and ask you to record the word:
+        Entering 4 starts the reviewing process in speaking mode. The app will pick a random word
+        card from the deck and ask you to record the word:
       </p>
 
       <CodeCard location="Terminal">
-        <pre class="font-code whitespace-pre text-[#5C6166] dark:text-[#BFBDB6]"><span class="text-[#787B80]/55 dark:text-[#ACB6BF]/45">───</span> <span class="font-bold text-[#4CBF99] dark:text-[#95E6CB]">Card 1 of 3</span> <span class="text-[#787B80]/55 dark:text-[#ACB6BF]/45">────────────────────────────────────────────</span>
+        <pre
+          class="font-code whitespace-pre text-[#5C6166] dark:text-[#BFBDB6]"
+        ><span class="text-[#787B80]/55 dark:text-[#ACB6BF]/45">───</span> <span class="font-bold text-[#4CBF99] dark:text-[#95E6CB]">Card 1 of 3</span> <span class="text-[#787B80]/55 dark:text-[#ACB6BF]/45">────────────────────────────────────────────</span>
 
 <span class="font-bold">Clues:</span>
 
@@ -509,10 +539,15 @@ Definitions of <span class="font-bold text-[#A37ACC] dark:text-[#D2A6FF]">"dilem
 <span class="text-[#4CBF99] dark:text-[#95E6CB]">Please record your audio. This will record for 3 seconds.</span>
 <span class="text-[#EBA400] dark:text-[#FFB454]">Press Enter to start recording...</span></pre>
       </CodeCard>
-      <br>
-      <p class="text-sm lg:text-base">Press enter to start recording. Then, the app give 'Correct' or 'Incorrect' base on your pronounciation.</p> 
+      <br />
+      <p class="text-sm lg:text-base">
+        Press enter to start recording. Then, the app give 'Correct' or 'Incorrect' base on your
+        pronounciation.
+      </p>
       <CodeCard location="Terminal">
-        <pre class="font-code whitespace-pre text-[#5C6166] dark:text-[#BFBDB6]">  <span class="text-[#4CBF99] dark:text-[#95E6CB]">Say the word out loud.</span>
+        <pre
+          class="font-code whitespace-pre text-[#5C6166] dark:text-[#BFBDB6]"
+        >  <span class="text-[#4CBF99] dark:text-[#95E6CB]">Say the word out loud.</span>
 <span class="text-[#4CBF99] dark:text-[#95E6CB]">Please record your audio. This will record for 3 seconds.</span>
 <span class="text-[#EBA400] dark:text-[#FFB454]">Press Enter to start recording...</span>
 <span class="text-[#E65050] dark:text-[#F07178]">Recording...</span>
@@ -523,8 +558,11 @@ You said: <span class="text-[#A37ACC] dark:text-[#D2A6FF]">Conspiracy</span>
 <span class="font-bold text-[#86B300] dark:text-[#AAD94C]">Correct!</span>
 <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">Box 2 · next review in 2 days</span></pre>
       </CodeCard>
-      <p class="text=sm lg:text-base">1 pt for correct answer, 0 pts for wrong answer and the card will appear again in the end, as usual.</p>
-      <br>
+      <p class="text=sm lg:text-base">
+        1 pt for correct answer, 0 pts for wrong answer and the card will appear again in the end,
+        as usual.
+      </p>
+      <br />
       <p class="text-sm lg:text-base">
         After reviewing all cards, the app will summarize this session.
       </p>
@@ -539,11 +577,13 @@ You said: <span class="text-[#A37ACC] dark:text-[#D2A6FF]">Conspiracy</span>
 
     <section class="mb-12">
       <p class="text-sm lg:text-base">
-        Entering 5 starts the reviewing process in sentence mode. The app will pick a random word card from
-        the deck and ask you to make a sentence with it:
+        Entering 5 starts the reviewing process in sentence mode. The app will pick a random word
+        card from the deck and ask you to make a sentence with it:
       </p>
       <CodeCard location="Terminal">
-        <pre class="font-code whitespace-pre text-[#5C6166] dark:text-[#BFBDB6]"><span class="text-[#787B80]/55 dark:text-[#ACB6BF]/45">───</span> <span class="font-bold text-[#4CBF99] dark:text-[#95E6CB]">Card 1 of 3</span> <span class="text-[#787B80]/55 dark:text-[#ACB6BF]/45">────────────────────────────────────────────</span>
+        <pre
+          class="font-code whitespace-pre text-[#5C6166] dark:text-[#BFBDB6]"
+        ><span class="text-[#787B80]/55 dark:text-[#ACB6BF]/45">───</span> <span class="font-bold text-[#4CBF99] dark:text-[#95E6CB]">Card 1 of 3</span> <span class="text-[#787B80]/55 dark:text-[#ACB6BF]/45">────────────────────────────────────────────</span>
 
   <span class="font-bold text-[#A37ACC] dark:text-[#D2A6FF]">dilemma</span>
 
@@ -552,12 +592,15 @@ You said: <span class="text-[#A37ACC] dark:text-[#D2A6FF]">Conspiracy</span>
 
 <span class="font-bold text-[#EBA400] dark:text-[#FFB454]">Write a sentence using "dilemma" (q = stop):</span></pre>
       </CodeCard>
-      <br>
+      <br />
       <p class="text-sm lg:text-base">
-        1 pt for correct use of word, 0 pts for inaccurate uses and the card will appear again in the end.
+        1 pt for correct use of word, 0 pts for inaccurate uses and the card will appear again in
+        the end.
       </p>
       <CodeCard location="Terminal">
-        <pre class="font-code whitespace-pre text-[#5C6166] dark:text-[#BFBDB6]"><span class="font-bold text-[#EBA400] dark:text-[#FFB454]">Write a sentence using "dilemma" (q = stop):</span> I have a dilemma
+        <pre
+          class="font-code whitespace-pre text-[#5C6166] dark:text-[#BFBDB6]"
+        ><span class="font-bold text-[#EBA400] dark:text-[#FFB454]">Write a sentence using "dilemma" (q = stop):</span> I have a dilemma
 <span class="text-[#22A4E6] dark:text-[#59C2FF]">Checking your sentence...</span>
 
 <span class="font-bold">Feedback:</span> Good use of “dilemma”. The sentence is correct.
@@ -565,7 +608,7 @@ You said: <span class="text-[#A37ACC] dark:text-[#D2A6FF]">Conspiracy</span>
 <span class="font-bold text-[#86B300] dark:text-[#AAD94C]">Correct!</span>
 <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">Box 2 · next review in 2 days</span></pre>
       </CodeCard>
-      <br>
+      <br />
       <p class="text-sm lg:text-base">
         After reviewing all cards, the app will summarize this session.
       </p>

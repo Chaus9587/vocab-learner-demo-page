@@ -23,7 +23,9 @@ const props = defineProps({
       <p class="origin-left scale-x-95 text-xs text-black/70 dark:text-white/70">{{ location }}</p>
       <p class="origin-left scale-x-95 text-xs text-black/70 dark:text-white/70">{{ lang }}</p>
     </section>
-    <section class="overflow-x-auto rounded-b-xl px-5 py-3 sm:pt-4 bg-white/50 text-[10px] sm:text-xs lg:text-sm dark:bg-zinc-800/45">
+    <section
+      class="overflow-x-auto rounded-b-xl bg-white/50 px-3 py-2 text-[10px] sm:px-5 sm:py-4 sm:text-xs lg:text-sm dark:bg-zinc-800/45"
+    >
       <slot></slot>
     </section>
   </div>
