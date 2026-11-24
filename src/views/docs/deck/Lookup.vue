@@ -42,7 +42,9 @@ Definitions of <span class="font-bold text-[#A37ACC] dark:text-[#D2A6FF]">"dilem
   
   <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">3.</span> (logic) A type of syllogism of the form "if A is true then B is true; 
      if C is true then D is true; either A or C is true; therefore either 
-     B or D is true".</pre>
+     B or D is true".
+    
+    <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">Chinese:</span> <span class="text-[#86B300] dark:text-[#AAD94C]">進退兩難</span></pre>
     </CodeCard>
     <br />
     <p class="text-sm lg:text-base">
@@ -93,6 +95,8 @@ Definitions of <span class="font-bold text-[#A37ACC] dark:text-[#D2A6FF]">"pedes
 
   <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">3.</span> (dance) Pertaining to ordinary, everyday movements incorporated in postmodern dance.
      <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">&gt;</span> <span class="text-[#4CBF99] dark:text-[#95E6CB]">The choreographer prefers pedestrian movements.</span>
+     
+  <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">Chinese:</span> <span class="text-[#86B300] dark:text-[#AAD94C]">行人的；行人專用的</span>
 
 <span class="text-[#EBA400] dark:text-[#F9AF4F]">Play pronunciation? (y/N)</span> n
 <span class="text-[#EBA400] dark:text-[#F9AF4F]">Add to your deck? (y/N)</span> n</pre>
@@ -115,6 +119,8 @@ Definitions of <span class="font-bold text-[#A37ACC] dark:text-[#D2A6FF]">"consp
      in the future.
   
   <span class="text-[#787B80]/70 dark:text-[#686868]">3.</span> (loosely) A secret agreement to do something.
+
+  <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">Chinese:</span> <span class="text-[#86B300] dark:text-[#AAD94C]">陰謀</span>
   
 <span class="text-[#EBA400] dark:text-[#F9AF4F]">Play pronunciation? (y/N)</span> n
 <span class="text-[#EBA400] dark:text-[#F9AF4F]">Add to your deck? (y/N)</span> y
@@ -126,6 +132,8 @@ Definitions of <span class="font-bold text-[#A37ACC] dark:text-[#D2A6FF]">"statu
   
   <span class="text-[#787B80]/70 dark:text-[#686868]">1.</span> The state of things; the way things are, as opposed to the way they could be; 
      the existing state of affairs.
+
+  <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">Chinese:</span> <span class="text-[#86B300] dark:text-[#AAD94C]">現狀</span>
   
 <span class="text-[#EBA400] dark:text-[#F9AF4F]">Play pronunciation? (y/N)</span> y
 <span class="text-[#22A4E6] dark:text-[#53BDFA]">The audio is generating...</span>
