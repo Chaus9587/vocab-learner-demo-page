@@ -1,21 +1,24 @@
 <script setup>
-import CodeCard from '@/components/CodeCard.vue'
-import InlineCode from '@/components/InlineCode.vue'
+import CodeCard from "@/components/CodeCard.vue";
+import InlineCode from "@/components/InlineCode.vue";
 
 const scrollToHeading = (id) => {
-  document.getElementById(id)?.scrollIntoView()
-}
+  document.getElementById(id)?.scrollIntoView();
+};
 </script>
 
 <template>
   <!-- Reviewing -->
-  <h1 class="origin-left scale-x-95 pb-12 text-[2.75rem]/14 font-semibold lg:text-5xl/15">
+  <h1
+    class="origin-left scale-x-95 pb-12 text-[2.75rem]/14 font-semibold lg:text-5xl/15"
+  >
     Reviewing the card deck
   </h1>
   <article>
     <section>
       <p class="text-sm lg:text-base">
-        Type 2 in the input section allows you to review the cards in the card deck:
+        Type 2 in the input section allows you to review the cards in the card
+        deck:
       </p>
       <CodeCard location="Terminal">
         <pre
@@ -35,15 +38,19 @@ const scrollToHeading = (id) => {
 <span class="text-[#EBA400] dark:text-[#FFB454]">Choose a mode (Enter = 1, q = back):</span></pre>
       </CodeCard>
       <p class="text-sm lg:text-base">
-        Suppose the deck holds the words 'dilemma', 'conspiracy', and 'status quo' as shown in the
-        previous section.
+        Suppose the deck holds the words 'dilemma', 'conspiracy', and 'status
+        quo' as shown in the previous section.
       </p>
       <br />
-      <p class="text-sm lg:text-base">Click on each mode to delve deeper into it.</p>
+      <p class="text-sm lg:text-base">
+        Click on each mode to delve deeper into it.
+      </p>
       <br /><br />
     </section>
 
-    <h2 class="origin-left scale-x-95 scroll-mt-28 pb-6 text-[2rem]/10 font-medium lg:text-4xl">
+    <h2
+      class="origin-left scale-x-95 scroll-mt-28 pb-6 text-[2rem]/10 font-medium lg:text-4xl"
+    >
       Review system
     </h2>
     <section class="mb-12">
@@ -51,8 +58,8 @@ const scrollToHeading = (id) => {
       <br />
       <ul class="list-disc pl-4">
         <li>
-          Randomly draw a card from the deck, and give the task for you to do based on the review
-          mode.
+          Randomly draw a card from the deck, and give the task for you to do
+          based on the review mode.
         </li>
         <li>Repeat this until all cards have drawn once.</li>
       </ul>
@@ -69,7 +76,9 @@ const scrollToHeading = (id) => {
 </pre>
       </CodeCard>
       <br />
-      <p class="text-sm lg:text-base">If you finish the task correctly, the app will:</p>
+      <p class="text-sm lg:text-base">
+        If you finish the task correctly, the app will:
+      </p>
       <br />
       <ul class="list-disc pl-4">
         <li>The app moves on to pick another random card.</li>
@@ -87,10 +96,12 @@ const scrollToHeading = (id) => {
       <br />
       <ul class="list-disc pl-4">
         <li>
-          That word will be reviewed again at the end of the review session. Then, the app moves on
-          to pick another random card.
+          That word will be reviewed again at the end of the review session.
+          Then, the app moves on to pick another random card.
         </li>
-        <li>You gain no points, even when you remembered it when it appears again.</li>
+        <li>
+          You gain no points, even when you remembered it when it appears again.
+        </li>
         <li>Next review of this word card will be in 1 day.</li>
       </ul>
       <br />
@@ -109,7 +120,9 @@ const scrollToHeading = (id) => {
 ...     </pre>
       </CodeCard>
       <br />
-      <p class="text-sm lg:text-base">After the review, the app gives back the session details:</p>
+      <p class="text-sm lg:text-base">
+        After the review, the app gives back the session details:
+      </p>
       <CodeCard location="Terminal">
         <pre
           class="font-code whitespace-pre text-[#5C6166] dark:text-[#BFBDB6]"
@@ -138,14 +151,17 @@ const scrollToHeading = (id) => {
 <span class="font-bold text-[#EBA400] dark:text-[#FFB454]">Choose:</span></pre>
       </CodeCard>
       <p class="text-sm lg:text-base">
-        IMPORTANT: You cannot review those cards until the card's next review date.
+        IMPORTANT: You cannot review those cards until the card's next review
+        date.
       </p>
       <br />
       <p class="text-sm lg:text-base">
         You can still practise the word cards in the deck if needed:
       </p>
       <CodeCard location="Terminal">
-        <pre class="font-code whitespace-pre text-[#5C6166] dark:text-[#BFBDB6]">...
+        <pre
+          class="font-code whitespace-pre text-[#5C6166] dark:text-[#BFBDB6]"
+        >...
 
 <span class="font-bold">c.</span> Clear the screen
 <span class="font-bold">q.</span> Quit
@@ -158,7 +174,8 @@ const scrollToHeading = (id) => {
       </CodeCard>
       <br />
       <p class="text-sm lg:text-base">
-        You can check your card deck's status in <InlineCode>4. View my deck</InlineCode> section.
+        You can check your card deck's status in
+        <InlineCode>4. View my deck</InlineCode> section.
       </p>
     </section>
 
@@ -170,8 +187,8 @@ const scrollToHeading = (id) => {
     </h2>
     <section class="mb-12">
       <p class="text-sm lg:text-base">
-        Entering 1 starts the meaning reviewing process. The app will pick a random word card from
-        the deck:
+        Entering 1 starts the meaning reviewing process. The app will pick a
+        random word card from the deck:
       </p>
 
       <CodeCard location="Terminal">
@@ -188,8 +205,8 @@ const scrollToHeading = (id) => {
       <br />
 
       <p class="text-sm lg:text-base">
-        You may recall the pronunciation of the word: (The audio file will be generated if it
-        hasn't)
+        You may recall the pronunciation of the word: (The audio file will be
+        generated if it hasn't)
       </p>
 
       <CodeCard location="Terminal">
@@ -206,8 +223,8 @@ const scrollToHeading = (id) => {
       </p>
       <br />
       <p class="text-sm lg:text-base">
-        Press enter to 'flip' the card, which will show the word definitions & related examples (if
-        any)
+        Press enter to 'flip' the card, which will show the word definitions &
+        related examples (if any)
       </p>
 
       <CodeCard location="Terminal">
@@ -229,8 +246,9 @@ Definitions of <span class="font-bold text-[#A37ACC] dark:text-[#D2A6FF]">"consp
       <br />
 
       <p class="text-sm lg:text-base">
-        Then, input whether you remember the word's definition or not. 1 pt if you remember, 0 pts
-        if you forgot, and the card will appear again in the end.
+        Then, input whether you remember the word's definition or not. 1 pt if
+        you remember, 0 pts if you forgot, and the card will appear again in the
+        end.
       </p>
       <br />
 
@@ -292,8 +310,8 @@ Definitions of <span class="font-bold text-[#A37ACC] dark:text-[#D2A6FF]">"consp
       </CodeCard>
 
       <p class="text-sm text-zinc-600 italic dark:text-zinc-400">
-        Note: The user cannot recall the meaning of 'status quo' in the first try, so no points for
-        that card.
+        Note: The user cannot recall the meaning of 'status quo' in the first
+        try, so no points for that card.
       </p>
       <br />
 
@@ -310,8 +328,8 @@ Definitions of <span class="font-bold text-[#A37ACC] dark:text-[#D2A6FF]">"consp
     </h2>
     <section class="mb-12">
       <p class="text-sm lg:text-base">
-        Entering 2 starts the spelling reviewing process. The app will pick a random word card from
-        the deck:
+        Entering 2 starts the spelling reviewing process. The app will pick a
+        random word card from the deck:
       </p>
       <CodeCard location="Terminal">
         <pre
@@ -330,8 +348,8 @@ Definitions of <span class="font-bold text-[#A37ACC] dark:text-[#D2A6FF]">"consp
       <br />
 
       <p class="text-sm lg:text-base">
-        Then, input the spelling of the word. 1 pt for correct answer, 0 pts for wrong answer and
-        the card will appear again in the end.
+        Then, input the spelling of the word. 1 pt for correct answer, 0 pts for
+        wrong answer and the card will appear again in the end.
       </p>
       <CodeCard location="Terminal">
         <pre
@@ -390,7 +408,9 @@ Definitions of <span class="font-bold text-[#A37ACC] dark:text-[#D2A6FF]">"statu
 <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">Box 2 · next review in 2 days</span></pre>
       </CodeCard>
       <br />
-      <p class="text-sm lg:text-base">Lastly, the 'try again' for incorrect cards:</p>
+      <p class="text-sm lg:text-base">
+        Lastly, the 'try again' for incorrect cards:
+      </p>
       <CodeCard location="Terminal">
         <pre
           class="font-code whitespace-pre text-[#5C6166] dark:text-[#BFBDB6]"
@@ -421,8 +441,8 @@ Definitions of <span class="font-bold text-[#A37ACC] dark:text-[#D2A6FF]">"statu
     </h2>
     <section class="mb-12">
       <p class="text-sm lg:text-base">
-        Entering 3 starts the reviewing process in listening mode. The app will pick a random word
-        card from the deck and play the word's pronunciation:
+        Entering 3 starts the reviewing process in listening mode. The app will
+        pick a random word card from the deck and play the word's pronunciation:
       </p>
       <CodeCard location="Terminal">
         <pre
@@ -438,13 +458,14 @@ Definitions of <span class="font-bold text-[#A37ACC] dark:text-[#D2A6FF]">"statu
       </audio>
       <br />
       <p class="text-sm text-zinc-600 italic dark:text-zinc-400">
-        Note: The audio will be automatically played. The audio file will be generated if it hasn't.
+        Note: The audio will be automatically played. The audio file will be
+        generated if it hasn't.
       </p>
       <br />
 
       <p class="text-sm lg:text-base">
-        Then, input the spelling of the word. 1 pt for correct answer, 0 pts for wrong answer and
-        the card will appear again in the end.
+        Then, input the spelling of the word. 1 pt for correct answer, 0 pts for
+        wrong answer and the card will appear again in the end.
       </p>
       <CodeCard location="Terminal">
         <pre
@@ -514,8 +535,8 @@ Definitions of <span class="font-bold text-[#A37ACC] dark:text-[#D2A6FF]">"dilem
 
     <section class="mb-12">
       <p class="text-sm lg:text-base">
-        Entering 4 starts the reviewing process in speaking mode. The app will pick a random word
-        card from the deck and ask you to record the word:
+        Entering 4 starts the reviewing process in speaking mode. The app will
+        pick a random word card from the deck and ask you to record the word:
       </p>
 
       <CodeCard location="Terminal">
@@ -541,8 +562,8 @@ Definitions of <span class="font-bold text-[#A37ACC] dark:text-[#D2A6FF]">"dilem
       </CodeCard>
       <br />
       <p class="text-sm lg:text-base">
-        Press enter to start recording. Then, the app gives 'Correct' or 'Incorrect' based on your
-        pronunciation.
+        Press enter to start recording. Then, the app gives 'Correct' or
+        'Incorrect' based on your pronunciation.
       </p>
       <CodeCard location="Terminal">
         <pre
@@ -559,8 +580,8 @@ You said: <span class="text-[#A37ACC] dark:text-[#D2A6FF]">Conspiracy</span>
 <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">Box 2 · next review in 2 days</span></pre>
       </CodeCard>
       <p class="text-sm lg:text-base">
-        1 pt for correct answer, 0 pts for wrong answer and the card will appear again in the end,
-        as usual.
+        1 pt for correct answer, 0 pts for wrong answer and the card will appear
+        again in the end, as usual.
       </p>
       <br />
       <p class="text-sm lg:text-base">
@@ -577,8 +598,9 @@ You said: <span class="text-[#A37ACC] dark:text-[#D2A6FF]">Conspiracy</span>
 
     <section class="mb-12">
       <p class="text-sm lg:text-base">
-        Entering 5 starts the reviewing process in sentence mode. The app will pick a random word
-        card from the deck and ask you to make a sentence with it:
+        Entering 5 starts the reviewing process in sentence mode. The app will
+        pick a random word card from the deck and ask you to make a sentence
+        with it:
       </p>
       <CodeCard location="Terminal">
         <pre
@@ -594,8 +616,8 @@ You said: <span class="text-[#A37ACC] dark:text-[#D2A6FF]">Conspiracy</span>
       </CodeCard>
       <br />
       <p class="text-sm lg:text-base">
-        1 pt for correct use of word, 0 pts for inaccurate uses and the card will appear again in
-        the end.
+        1 pt for correct use of word, 0 pts for inaccurate uses and the card
+        will appear again in the end.
       </p>
       <CodeCard location="Terminal">
         <pre

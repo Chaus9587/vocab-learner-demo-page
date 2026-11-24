@@ -1,18 +1,21 @@
 <script setup>
-import { RouterLink } from 'vue-router'
-import CodeCard from '@/components/CodeCard.vue'
-import InlineCode from '@/components/InlineCode.vue'
-
+import { RouterLink } from "vue-router";
+import CodeCard from "@/components/CodeCard.vue";
+import InlineCode from "@/components/InlineCode.vue";
 </script>
 
 <template>
   <article>
-    <h1 class="origin-left scale-x-95 pb-12 text-[2.75rem]/14 font-semibold lg:text-5xl/15">
+    <h1
+      class="origin-left scale-x-95 pb-12 text-[2.75rem]/14 font-semibold lg:text-5xl/15"
+    >
       Main application
     </h1>
 
     <section class="mb-12">
-      <p class="text-sm lg:text-base">After a successful installation, type in your terminal:</p>
+      <p class="text-sm lg:text-base">
+        After a successful installation, type in your terminal:
+      </p>
       <CodeCard location="Terminal">
         <pre
           class="font-code whitespace-pre"
@@ -46,27 +49,31 @@ This package helps you learn English vocabulary more easily!
       </CodeCard>
       <br />
       <p class="text-sm lg:text-base">
-        Use the keyboard keys to control the application. (i.e. 1-9, c, q in this menu)
+        Use the keyboard keys to control the application. (i.e. 1-9, c, q in
+        this menu)
       </p>
       <br />
       <ul class="list-disc space-y-1.5 pl-4 text-sm lg:text-base">
         <li>
-          <InlineCode>2. Review cards</InlineCode> shows how many cards are due today, when there
-          are any.
+          <InlineCode>2. Review cards</InlineCode> shows how many cards are due
+          today, when there are any.
         </li>
         <li>
           <InlineCode>c</InlineCode>, <InlineCode>clear</InlineCode> or
           <InlineCode>cls</InlineCode> clears the screen.
         </li>
         <li>
-          <InlineCode>q</InlineCode> (or <InlineCode>Ctrl+C</InlineCode>) quits the app. Your answers
-          are saved after every card, so you never lose a session.
+          <InlineCode>q</InlineCode> (or <InlineCode>Ctrl+C</InlineCode>) quits
+          the app. Your answers are saved after every card, so you never lose a
+          session.
         </li>
       </ul>
       <br />
       <p class="text-sm lg:text-base">
-        Next: <RouterLink to="/docs/core-functions">see what each option does</RouterLink>. To turn
-        on translations and the speech modes, set up your
+        Next:
+        <RouterLink to="/docs/core-functions"
+          >see what each option does</RouterLink
+        >. To turn on translations and the speech modes, set up your
         <RouterLink to="/docs/settings">API keys</RouterLink>.
       </p>
     </section>

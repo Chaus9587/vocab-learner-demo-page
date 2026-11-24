@@ -12,13 +12,11 @@ defineProps({
     type: Array,
     required: true,
   },
-})
+});
 </script>
 
 <template>
-  <div
-    class="my-6 overflow-x-auto rounded-xl border border-[#6666664f]"
-  >
+  <div class="my-6 overflow-x-auto rounded-xl border border-[#6666664f]">
     <table class="w-full border-collapse text-left text-xs lg:text-sm">
       <thead class="bg-orange-100/55 dark:bg-zinc-800">
         <tr>
@@ -37,7 +35,11 @@ defineProps({
           :key="rowIndex"
           class="border-t border-[#6666664f]"
         >
-          <td v-for="(cell, cellIndex) in row" :key="cellIndex" class="px-4 py-2.5 align-top">
+          <td
+            v-for="(cell, cellIndex) in row"
+            :key="cellIndex"
+            class="px-4 py-2.5 align-top"
+          >
             <code
               v-if="columns[cellIndex]?.code"
               class="font-code whitespace-nowrap text-[#EBA400] dark:text-[#FFB454]"

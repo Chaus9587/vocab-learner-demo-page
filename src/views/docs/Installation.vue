@@ -1,27 +1,42 @@
 <script setup>
-import { RouterLink } from 'vue-router'
-import CodeCard from '@/components/CodeCard.vue'
+import { RouterLink } from "vue-router";
+import CodeCard from "@/components/CodeCard.vue";
 </script>
 
 <template>
   <article>
-    <h1 class="origin-left scale-x-95 pb-12 text-[2.75rem]/14 font-semibold lg:text-5xl/15">
+    <h1
+      class="origin-left scale-x-95 pb-12 text-[2.75rem]/14 font-semibold lg:text-5xl/15"
+    >
       Installations
     </h1>
 
     <section class="mb-12">
       <ul class="list-disc space-y-1.5 pl-4 text-sm lg:text-base">
         <li>
-          <a href="https://www.python.org/" target="_blank" rel="noopener noreferrer">Python</a> (>=
-          v3.10)
+          <a
+            href="https://www.python.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Python</a
+          >
+          (>= v3.10)
         </li>
         <li>
           Speech features:
-          <a href="https://files.portaudio.com/" target="_blank" rel="noopener noreferrer"
+          <a
+            href="https://files.portaudio.com/"
+            target="_blank"
+            rel="noopener noreferrer"
             >the PortAudio library</a
           >
           (for recording) and
-          <a href="https://ffmpeg.org/" target="_blank" rel="noopener noreferrer">ffmpeg</a>
+          <a
+            href="https://ffmpeg.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >ffmpeg</a
+          >
           on your PATH (for playback)
         </li>
         <li>
@@ -54,8 +69,8 @@ import CodeCard from '@/components/CodeCard.vue'
 
       <br />
       <p class="text-sm lg:text-base">
-        In your python environment, write: (skip this if you are only going to use the main
-        application)
+        In your python environment, write: (skip this if you are only going to
+        use the main application)
       </p>
       <CodeCard location="myProject.py (or .ipynb)" lang="Python">
         <pre
@@ -77,15 +92,16 @@ import CodeCard from '@/components/CodeCard.vue'
 
       <br />
       <p class="text-sm lg:text-base">
-        Everything is now set! To turn on translations and the speech features, add your
+        Everything is now set! To turn on translations and the speech features,
+        add your
         <RouterLink to="/docs/settings">API keys</RouterLink> (optional).
       </p>
     </section>
 
     <section class="mb-12">
       <p class="text-sm lg:text-base">
-        In case you want to clone the repository and run the project in the project folder.
-        Initialize the package in this way:
+        In case you want to clone the repository and run the project in the
+        project folder. Initialize the package in this way:
       </p>
 
       <br />
@@ -109,7 +125,9 @@ import CodeCard from '@/components/CodeCard.vue'
       </CodeCard>
 
       <br />
-      <p class="text-sm lg:text-base">Then, install the packages in the project folder:</p>
+      <p class="text-sm lg:text-base">
+        Then, install the packages in the project folder:
+      </p>
       <CodeCard location="Terminal">
         <pre
           class="font-code whitespace-pre"

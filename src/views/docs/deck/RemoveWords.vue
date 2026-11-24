@@ -1,28 +1,34 @@
 <script setup>
-import CodeCard from '@/components/CodeCard.vue'
-import DocTable from '@/components/DocTable.vue'
-import InlineCode from '@/components/InlineCode.vue'
+import CodeCard from "@/components/CodeCard.vue";
+import DocTable from "@/components/DocTable.vue";
+import InlineCode from "@/components/InlineCode.vue";
 
-const commandColumns = [{ label: 'Type', code: true }, { label: 'Removes' }]
+const commandColumns = [{ label: "Type", code: true }, { label: "Removes" }];
 const commandRows = [
-  ['banana, accept', 'Those words (separate them with commas)'],
-  ['1,3,5-8', 'Those numbers from the list'],
-  ['amb*', 'Words that start with "amb" (* = any letters, ? = one letter)'],
-  ['box 1', 'Every card in box 1 (box 5 or mastered = the words you already know well)'],
-  ['all', 'Every word in your deck'],
-  ['banana, 3, 5-8', 'You can mix them'],
-]
+  ["banana, accept", "Those words (separate them with commas)"],
+  ["1,3,5-8", "Those numbers from the list"],
+  ["amb*", 'Words that start with "amb" (* = any letters, ? = one letter)'],
+  [
+    "box 1",
+    "Every card in box 1 (box 5 or mastered = the words you already know well)",
+  ],
+  ["all", "Every word in your deck"],
+  ["banana, 3, 5-8", "You can mix them"],
+];
 </script>
 
 <template>
-  <h1 class="origin-left scale-x-95 pb-12 text-[2.75rem]/14 font-semibold lg:text-5xl/15">
+  <h1
+    class="origin-left scale-x-95 pb-12 text-[2.75rem]/14 font-semibold lg:text-5xl/15"
+  >
     Removing words from the deck
   </h1>
   <article>
     <section class="mb-12">
       <p class="text-sm lg:text-base">
-        Type 7 in the input section. The app lists your words in numbered columns (the same numbers
-        as in <InlineCode>4. View my deck</InlineCode>) and shows what you can type:
+        Type 7 in the input section. The app lists your words in numbered
+        columns (the same numbers as in
+        <InlineCode>4. View my deck</InlineCode>) and shows what you can type:
       </p>
       <CodeCard location="Terminal">
         <pre
@@ -53,13 +59,16 @@ const commandRows = [
       <DocTable :columns="commandColumns" :rows="commandRows" />
     </section>
 
-    <h2 class="origin-left scale-x-95 scroll-mt-28 pb-6 text-[2rem]/10 font-medium lg:text-4xl">
+    <h2
+      class="origin-left scale-x-95 scroll-mt-28 pb-6 text-[2rem]/10 font-medium lg:text-4xl"
+    >
       Removing and undoing
     </h2>
     <section class="mb-12">
       <p class="text-sm lg:text-base">
-        The app shows the words it is about to remove and waits for <InlineCode>y</InlineCode>.
-        After a removal the numbers change, so the new list is shown straight away:
+        The app shows the words it is about to remove and waits for
+        <InlineCode>y</InlineCode>. After a removal the numbers change, so the
+        new list is shown straight away:
       </p>
       <CodeCard location="Terminal">
         <pre
@@ -81,8 +90,9 @@ const commandRows = [
       <br />
 
       <p class="text-sm lg:text-base">
-        Changed your mind? Type <InlineCode>u</InlineCode> to put the cards back, with their box,
-        review date and score. You can undo more than once.
+        Changed your mind? Type <InlineCode>u</InlineCode> to put the cards
+        back, with their box, review date and score. You can undo more than
+        once.
       </p>
       <CodeCard location="Terminal">
         <pre
@@ -100,8 +110,8 @@ const commandRows = [
       <br />
 
       <p class="text-sm lg:text-base">
-        If any part of what you typed is wrong, nothing is removed, so a typo never deletes the
-        wrong word:
+        If any part of what you typed is wrong, nothing is removed, so a typo
+        never deletes the wrong word:
       </p>
       <CodeCard location="Terminal">
         <pre
@@ -113,8 +123,8 @@ const commandRows = [
       <br />
 
       <p class="text-sm lg:text-base">
-        Removing every word at once needs you to type <InlineCode>delete all</InlineCode>, so it
-        can't happen by accident:
+        Removing every word at once needs you to type
+        <InlineCode>delete all</InlineCode>, so it can't happen by accident:
       </p>
       <CodeCard location="Terminal">
         <pre
@@ -130,13 +140,13 @@ const commandRows = [
 
       <ul class="list-disc space-y-1.5 pl-4 text-sm lg:text-base">
         <li>
-          <InlineCode>l</InlineCode> shows the list again and <InlineCode>h</InlineCode> shows the
-          help.
+          <InlineCode>l</InlineCode> shows the list again and
+          <InlineCode>h</InlineCode> shows the help.
         </li>
         <li>Press Enter on an empty line to go back to the main menu.</li>
         <li>
-          Before each removal, the deck is copied to <InlineCode>deck.backup.json</InlineCode>, next
-          to the deck file.
+          Before each removal, the deck is copied to
+          <InlineCode>deck.backup.json</InlineCode>, next to the deck file.
         </li>
       </ul>
     </section>

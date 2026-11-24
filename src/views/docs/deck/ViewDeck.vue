@@ -1,9 +1,11 @@
 <script setup>
-import CodeCard from '@/components/CodeCard.vue'
+import CodeCard from "@/components/CodeCard.vue";
 </script>
 
 <template>
-  <h1 class="origin-left scale-x-95 pb-12 text-[2.75rem]/14 font-semibold lg:text-5xl/15">
+  <h1
+    class="origin-left scale-x-95 pb-12 text-[2.75rem]/14 font-semibold lg:text-5xl/15"
+  >
     Viewing the card deck's status
   </h1>
   <article>
@@ -33,8 +35,8 @@ import CodeCard from '@/components/CodeCard.vue'
       </p>
       <br />
       <p class="text-sm lg:text-base">
-        After a review, some cards will be due earlier than other cards because users got them
-        wrong.
+        After a review, some cards will be due earlier than other cards because
+        users got them wrong.
       </p>
       <CodeCard location="Terminal">
         <pre

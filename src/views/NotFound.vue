@@ -1,14 +1,18 @@
 <script setup>
-import { RouterLink, useRoute } from 'vue-router'
+import { RouterLink, useRoute } from "vue-router";
 
-const route = useRoute()
+const route = useRoute();
 </script>
 
 <template>
-  <div class="flex min-h-[70vh] flex-col items-center justify-center px-8 py-24 text-center">
+  <div
+    class="flex min-h-[70vh] flex-col items-center justify-center px-8 py-24 text-center"
+  >
     <p class="font-light text-neutral-700/60 dark:text-neutral-500">404</p>
     <h1 class="mt-3 mb-4 text-4xl/10 sm:text-6xl/17">Page not found</h1>
-    <p class="max-w-full font-code text-sm break-all text-[#FA8532] sm:text-base dark:text-[#FF8F40]">
+    <p
+      class="max-w-full font-code text-sm break-all text-[#FA8532] sm:text-base dark:text-[#FF8F40]"
+    >
       No definition found for "{{ route.path }}".
     </p>
     <RouterLink

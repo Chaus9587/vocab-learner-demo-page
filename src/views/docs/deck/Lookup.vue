@@ -1,10 +1,12 @@
 <script setup>
-import CodeCard from '@/components/CodeCard.vue'
+import CodeCard from "@/components/CodeCard.vue";
 </script>
 
 <template>
   <!-- Lookup & add words -->
-  <h1 class="origin-left scale-x-95 pb-12 text-[2.75rem]/14 font-semibold lg:text-5xl/15">
+  <h1
+    class="origin-left scale-x-95 pb-12 text-[2.75rem]/14 font-semibold lg:text-5xl/15"
+  >
     Lookup & add words to the deck
   </h1>
   <article class="mb-12">
@@ -23,8 +25,8 @@ import CodeCard from '@/components/CodeCard.vue'
     </p>
     <br />
     <p class="text-sm lg:text-base">
-      Looking up a word in the input section gives the word's definitions and related examples (if
-      any):
+      Looking up a word in the input section gives the word's definitions and
+      related examples (if any):
     </p>
     <CodeCard location="Terminal">
       <pre
@@ -43,7 +45,9 @@ Definitions of <span class="font-bold text-[#A37ACC] dark:text-[#D2A6FF]">"dilem
      B or D is true".</pre>
     </CodeCard>
     <br />
-    <p class="text-sm lg:text-base">You can also get the pronunciation of the word:</p>
+    <p class="text-sm lg:text-base">
+      You can also get the pronunciation of the word:
+    </p>
     <CodeCard location="Terminal">
       <pre
         class="font-code whitespace-pre text-[#5C6166] dark:text-[#BFBDB6]"
@@ -57,8 +61,8 @@ Definitions of <span class="font-bold text-[#A37ACC] dark:text-[#D2A6FF]">"dilem
     </audio>
     <br />
     <p class="text-sm text-zinc-600 italic dark:text-zinc-400">
-      Note: The audio will be automatically played when it is generated (when you choose to play the
-      pronunciation).
+      Note: The audio will be automatically played when it is generated (when
+      you choose to play the pronunciation).
     </p>
     <br />
     <p class="text-sm lg:text-base">
@@ -94,7 +98,9 @@ Definitions of <span class="font-bold text-[#A37ACC] dark:text-[#D2A6FF]">"pedes
 <span class="text-[#EBA400] dark:text-[#F9AF4F]">Add to your deck? (y/N)</span> n</pre>
     </CodeCard>
     <br />
-    <p class="text-sm lg:text-base">Of course, you can continue to do this multiple times:</p>
+    <p class="text-sm lg:text-base">
+      Of course, you can continue to do this multiple times:
+    </p>
     <CodeCard location="Terminal">
       <pre
         class="font-code whitespace-pre text-[#5C6166] dark:text-[#BFBDB6]"

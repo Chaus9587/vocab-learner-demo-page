@@ -1,17 +1,19 @@
 <script setup>
-import { RouterLink } from 'vue-router'
-import CodeCard from '@/components/CodeCard.vue'
+import { RouterLink } from "vue-router";
+import CodeCard from "@/components/CodeCard.vue";
 </script>
 
 <template>
-  <h1 class="origin-left scale-x-95 pb-12 text-[2.75rem]/14 font-semibold lg:text-5xl/15">
+  <h1
+    class="origin-left scale-x-95 pb-12 text-[2.75rem]/14 font-semibold lg:text-5xl/15"
+  >
     Practising one word
   </h1>
   <article>
     <section class="mb-12">
       <p class="text-sm lg:text-base">
-        Type 9 in the input section to review a single card right now, whatever its review date.
-        Type the word, then pick a review mode:
+        Type 9 in the input section to review a single card right now, whatever
+        its review date. Type the word, then pick a review mode:
       </p>
       <CodeCard location="Terminal">
         <pre
@@ -68,9 +70,9 @@ import CodeCard from '@/components/CodeCard.vue'
       <br />
 
       <p class="text-sm lg:text-base">
-        Unlike "Practise all cards anyway" in the review menu, this answer counts. The card's box
-        and next review date change as in a normal review. Here, "dilemma" moved from box 2 to box
-        3.
+        Unlike "Practise all cards anyway" in the review menu, this answer
+        counts. The card's box and next review date change as in a normal
+        review. Here, "dilemma" moved from box 2 to box 3.
       </p>
       <br />
       <p class="text-sm text-zinc-600 italic dark:text-zinc-400">

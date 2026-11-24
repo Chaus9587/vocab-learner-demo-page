@@ -1,10 +1,12 @@
 <script setup>
-import CodeCard from '@/components/CodeCard.vue'
+import CodeCard from "@/components/CodeCard.vue";
 </script>
 
 <template>
   <!-- Import word cards to deck via scanning documents -->
-  <h1 class="origin-left scale-x-95 pb-12 text-[2.75rem]/14 font-semibold lg:text-5xl/15">
+  <h1
+    class="origin-left scale-x-95 pb-12 text-[2.75rem]/14 font-semibold lg:text-5xl/15"
+  >
     Import word cards to deck by scanning documents
   </h1>
   <article>
@@ -25,8 +27,9 @@ import CodeCard from '@/components/CodeCard.vue'
       <br />
 
       <p class="text-sm lg:text-base">
-        Drag the desired file (PDF, Word .docx, CSV, plain text, or an image such as .jpg, which
-        needs OCR) into the command box, and remove unnecessary text/ symbols (if any).
+        Drag the desired file (PDF, Word .docx, CSV, plain text, or an image
+        such as .jpg, which needs OCR) into the command box, and remove
+        unnecessary text/ symbols (if any).
       </p>
       <CodeCard location="Terminal">
         <pre
@@ -71,7 +74,9 @@ import CodeCard from '@/components/CodeCard.vue'
       </CodeCard>
       <br />
 
-      <p class="text-sm lg:text-base">You can use the AI tutor to pick more "useful" words.</p>
+      <p class="text-sm lg:text-base">
+        You can use the AI tutor to pick more "useful" words.
+      </p>
       <CodeCard location="Terminal">
         <pre
           class="font-code whitespace-pre text-[#5C6166] dark:text-[#BFBDB6]"
@@ -91,9 +96,13 @@ import CodeCard from '@/components/CodeCard.vue'
       </CodeCard>
       <br />
 
-      <p class="text-sm lg:text-base">You can choose what words to add to the deck:</p>
+      <p class="text-sm lg:text-base">
+        You can choose what words to add to the deck:
+      </p>
       <CodeCard location="Terminal">
-        <pre class="font-code whitespace-pre text-[#5C6166] dark:text-[#BFBDB6]">
+        <pre
+          class="font-code whitespace-pre text-[#5C6166] dark:text-[#BFBDB6]"
+        >
 <span class="font-bold text-[#EBA400] dark:text-[#FFB454]">Your choice:</span> all
 
 <span class="text-[#787B80]/55 dark:text-[#ACB6BF]/45">───</span> <span class="font-bold text-[#4CBF99] dark:text-[#95E6CB]">Adding 18 words</span> <span class="text-[#787B80]/55 dark:text-[#ACB6BF]/45">────────────────────────────────────────</span>
