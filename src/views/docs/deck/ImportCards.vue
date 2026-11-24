@@ -3,7 +3,6 @@ import CodeCard from "@/components/CodeCard.vue";
 </script>
 
 <template>
-  <!-- Import word cards to deck via scanning documents -->
   <h1
     class="origin-left scale-x-95 pb-12 text-[2.75rem]/14 font-semibold lg:text-5xl/15"
   >

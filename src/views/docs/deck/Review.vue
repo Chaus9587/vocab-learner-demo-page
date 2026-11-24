@@ -8,7 +8,6 @@ const scrollToHeading = (id) => {
 </script>
 
 <template>
-  <!-- Reviewing -->
   <h1
     class="origin-left scale-x-95 pb-12 text-[2.75rem]/14 font-semibold lg:text-5xl/15"
   >
