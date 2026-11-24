@@ -156,8 +156,21 @@ const contributionRows = [
     </p>
     <br />
     <p class="text-sm lg:text-base">
+      Introductory video:
+      <a
+        href="https://youtu.be/wxcqpKDQdDI"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Click me</a
+      >
+    </p>
+    <br />
+    <p class="text-sm lg:text-base">
       The source code for this website:
-      <a href="https://github.com/Chaus9587/vocab-learner-demo-page"
+      <a
+        href="https://github.com/Chaus9587/vocab-learner-demo-page"
+        target="_blank"
+        rel="noopener noreferrer"
         >Click me</a
       >
     </p>
