@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onMounted, onUnmounted, computed } from 'vue'
+import { ref, onMounted, onUnmounted, computed, watch } from 'vue'
 import { useRoute, RouterLink } from 'vue-router'
 
 import { useTheme } from '@/composables/useTheme'
@@ -19,6 +19,14 @@ const handleScroll = () => {
 }
 
 const showBorder = computed(() => !isAtTop.value || route.path.startsWith('/docs'))
+
+// Close the mobile menu after moving to another page.
+watch(
+  () => route.fullPath,
+  () => {
+    burgerMenuState.value = false
+  },
+)
 
 const navData = {
   links: [
@@ -41,7 +49,7 @@ onUnmounted(() => {
 
 <template>
   <div
-    class="300ms sticky top-0 z-50 border-b backdrop-blur-xl transition-colors ease-in-out"
+    class="sticky top-0 z-50 border-b backdrop-blur-xl transition-colors duration-300 ease-in-out"
     :class="showBorder ? 'border-b-[#6666664f]' : 'border-b-transparent'"
   >
     <nav class="flex h-17.75 items-center justify-between px-8 sm:px-16 md:px-24 lg:px-30 xl:px-42">
@@ -74,7 +82,12 @@ onUnmounted(() => {
         <div
           class="mx-4 hidden gap-8 font-normal text-neutral-700 sm:flex md:gap-10 lg:gap-12 dark:text-neutral-300"
         >
-          <RouterLink v-for="link in navData?.links" :to="link.to" :class="navData?.class"
+          <RouterLink
+            v-for="link in navData?.links"
+            :key="link.to"
+            :to="link.to"
+            :class="navData?.class"
+            active-class="text-orange-700 dark:text-orange-300"
             >{{ link.name }}
           </RouterLink>
         </div>
@@ -83,6 +96,7 @@ onUnmounted(() => {
         <div class="flex items-center gap-6">
           <button
             @click="toggleDark()"
+            :aria-label="isDark ? 'Switch to light mode' : 'Switch to dark mode'"
             class="px-1.25 py-1.25 transition duration-200 ease-in-out hover:scale-120 hover:cursor-pointer"
           >
             <img v-if="isDark" src="@/assets/dark_mode.svg" alt="" class="size-5" />
@@ -93,6 +107,8 @@ onUnmounted(() => {
           <button
             class="visible size-5 transition duration-200 ease-in-out hover:scale-120 hover:cursor-pointer sm:hidden"
             @click="burgerMenuState = !burgerMenuState"
+            aria-label="Toggle menu"
+            :aria-expanded="burgerMenuState"
           >
             <span v-if="!burgerMenuState">
               <img v-if="isDark" src="@/assets/burger_dark.svg" alt="" />
@@ -107,7 +123,12 @@ onUnmounted(() => {
       </div>
     </nav>
     <section v-if="burgerMenuState" class="flex flex-col items-end gap-3 px-15 pb-6 sm:hidden">
-      <RouterLink v-for="link in navData?.links" :to="link.to" :class="navData?.class"
+      <RouterLink
+        v-for="link in navData?.links"
+        :key="link.to"
+        :to="link.to"
+        :class="navData?.class"
+        active-class="text-orange-700 dark:text-orange-300"
         >{{ link.name }}
       </RouterLink>
     </section>

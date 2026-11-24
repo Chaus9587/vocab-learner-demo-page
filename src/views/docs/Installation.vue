@@ -1,4 +1,5 @@
 <script setup>
+import { RouterLink } from 'vue-router'
 import CodeCard from '@/components/CodeCard.vue'
 </script>
 
@@ -62,6 +63,7 @@ import CodeCard from '@/components/CodeCard.vue'
         ><span class="text-[#FA8532] dark:text-[#FF8F40]">from</span> <span class="text-[#22A4E6] dark:text-[#59C2FF]">word_flashcard_vocab_learner</span> <span class="text-[#FA8532] dark:text-[#FF8F40]">import</span> (
     <span class="text-[#22A4E6] dark:text-[#59C2FF]">cardDeck</span>,
     <span class="text-[#22A4E6] dark:text-[#59C2FF]">connectFreeDictionaryAPI</span>,
+    <span class="text-[#22A4E6] dark:text-[#59C2FF]">exportDeckToCSV</span>,
     <span class="text-[#22A4E6] dark:text-[#59C2FF]">genAITutor</span>,
     <span class="text-[#22A4E6] dark:text-[#59C2FF]">importVocabulary</span>,
     <span class="text-[#22A4E6] dark:text-[#59C2FF]">leitnerScheduler</span>,
@@ -74,7 +76,10 @@ import CodeCard from '@/components/CodeCard.vue'
       </CodeCard>
 
       <br />
-      <p class="text-sm lg:text-base">Everything is now set!</p>
+      <p class="text-sm lg:text-base">
+        Everything is now set! To turn on translations and the speech features, add your
+        <RouterLink to="/docs/settings">API keys</RouterLink> (optional).
+      </p>
     </section>
 
     <section class="mb-12">

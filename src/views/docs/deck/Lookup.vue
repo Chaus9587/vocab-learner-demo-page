@@ -23,7 +23,8 @@ import CodeCard from '@/components/CodeCard.vue'
     </p>
     <br />
     <p class="text-sm lg:text-base">
-      Look up a word in the input section gives the word's definition and related examples (if any):
+      Looking up a word in the input section gives the word's definitions and related examples (if
+      any):
     </p>
     <CodeCard location="Terminal">
       <pre
@@ -33,7 +34,7 @@ import CodeCard from '@/components/CodeCard.vue'
 Definitions of <span class="font-bold text-[#A37ACC] dark:text-[#D2A6FF]">"dilemma"</span>:
   
   <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">1.</span> A circumstance in which a choice must be made between two or more 
-     alternatives that seemequally undesirable.
+     alternatives that seem equally undesirable.
   
   <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">2.</span> Any difficult circumstance or problem.
   
@@ -42,22 +43,22 @@ Definitions of <span class="font-bold text-[#A37ACC] dark:text-[#D2A6FF]">"dilem
      B or D is true".</pre>
     </CodeCard>
     <br />
-    <p class="text-sm lg:text-base">You can also get the pronounciation of the word:</p>
+    <p class="text-sm lg:text-base">You can also get the pronunciation of the word:</p>
     <CodeCard location="Terminal">
       <pre
         class="font-code whitespace-pre text-[#5C6166] dark:text-[#BFBDB6]"
       ><span class="text-[#EBA400] dark:text-[#FFB454]">Play pronunciation? (y/N)</span> y
-<span class="text-[#22A4E6] dark:text-[#59C2FF]">The audio of 'dilemma' is generating...</span>
-<span class="text-[#86B300] dark:text-[#AAD94C]">Audio saved successfully to audio_cache\words\dilemma.mp3.</span></pre>
+<span class="text-[#22A4E6] dark:text-[#59C2FF]">The audio is generating...</span>
+<span class="text-[#86B300] dark:text-[#AAD94C]">Audio saved successfully.</span></pre>
     </CodeCard>
-    <audio controls>
+    <audio controls class="max-w-full">
       <source src="@/assets/dilemma.mp3" type="audio/mpeg" />
       Your browser does not support the audio element.
     </audio>
     <br />
     <p class="text-sm text-zinc-600 italic dark:text-zinc-400">
       Note: The audio will be automatically played when it is generated (when you choose to play the
-      pronounciation).
+      pronunciation).
     </p>
     <br />
     <p class="text-sm lg:text-base">
@@ -121,8 +122,8 @@ Definitions of <span class="font-bold text-[#A37ACC] dark:text-[#D2A6FF]">"statu
      the existing state of affairs.
   
 <span class="text-[#EBA400] dark:text-[#F9AF4F]">Play pronunciation? (y/N)</span> y
-<span class="text-[#22A4E6] dark:text-[#53BDFA]">The audio of 'status quo' is generating...</span>
-<span class="text-[#86B300] dark:text-[#AAD94C]">Audio saved successfully to audio_cache\words\status_quo.mp3.</span>
+<span class="text-[#22A4E6] dark:text-[#53BDFA]">The audio is generating...</span>
+<span class="text-[#86B300] dark:text-[#AAD94C]">Audio saved successfully.</span>
 <span class="text-[#EBA400] dark:text-[#F9AF4F]">Add to your deck? (y/N)</span> y
 <span class="text-[#86B300] dark:text-[#AAD94C]">Added "status quo" to your deck (3 words).</span></pre>
     </CodeCard>

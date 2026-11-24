@@ -25,8 +25,8 @@ import CodeCard from '@/components/CodeCard.vue'
       <br />
 
       <p class="text-sm lg:text-base">
-        Drag the desired files (support PDF, word, spreadsheet, plain text, .jpeg (requires OCR))
-        into the command box, remove unnecessary text/ symbols (if any).
+        Drag the desired file (PDF, Word .docx, CSV, plain text, or an image such as .jpg, which
+        needs OCR) into the command box, and remove unnecessary text/ symbols (if any).
       </p>
       <CodeCard location="Terminal">
         <pre

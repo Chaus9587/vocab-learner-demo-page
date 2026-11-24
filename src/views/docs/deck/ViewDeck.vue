@@ -33,7 +33,8 @@ import CodeCard from '@/components/CodeCard.vue'
       </p>
       <br />
       <p class="text-sm lg:text-base">
-        After a review, some cards will due earlier than other cards becuase users got it wrong.
+        After a review, some cards will be due earlier than other cards because users got them
+        wrong.
       </p>
       <CodeCard location="Terminal">
         <pre

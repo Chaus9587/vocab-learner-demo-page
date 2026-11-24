@@ -35,11 +35,11 @@ const scrollToHeading = (id) => {
 <span class="text-[#EBA400] dark:text-[#FFB454]">Choose a mode (Enter = 1, q = back):</span></pre>
       </CodeCard>
       <p class="text-sm lg:text-base">
-        Suppose the deck hold words 'dilemma', 'conspiracy', and 'status quo' as shown in the
-        provious section.
+        Suppose the deck holds the words 'dilemma', 'conspiracy', and 'status quo' as shown in the
+        previous section.
       </p>
       <br />
-      <p class="text-sm lg:text-base">Click on each functions to delve deeper about them.</p>
+      <p class="text-sm lg:text-base">Click on each mode to delve deeper into it.</p>
       <br /><br />
     </section>
 
@@ -69,7 +69,7 @@ const scrollToHeading = (id) => {
 </pre>
       </CodeCard>
       <br />
-      <p class="text-sm lg:text-base">If you finish the task correctly. The app will:</p>
+      <p class="text-sm lg:text-base">If you finish the task correctly, the app will:</p>
       <br />
       <ul class="list-disc pl-4">
         <li>The app moves on to pick another random card.</li>
@@ -109,7 +109,7 @@ const scrollToHeading = (id) => {
 ...     </pre>
       </CodeCard>
       <br />
-      <p class="text-sm lg:text-base">After the review. The app gives back the session details:</p>
+      <p class="text-sm lg:text-base">After the review, the app gives back the session details:</p>
       <CodeCard location="Terminal">
         <pre
           class="font-code whitespace-pre text-[#5C6166] dark:text-[#BFBDB6]"
@@ -188,7 +188,7 @@ const scrollToHeading = (id) => {
       <br />
 
       <p class="text-sm lg:text-base">
-        You may recall the pronounciation of the word: (The audio file will be generated if it
+        You may recall the pronunciation of the word: (The audio file will be generated if it
         hasn't)
       </p>
 
@@ -206,7 +206,7 @@ const scrollToHeading = (id) => {
       </p>
       <br />
       <p class="text-sm lg:text-base">
-        Press enter to 'flip' the card, which will show the word defintions & related examples (if
+        Press enter to 'flip' the card, which will show the word definitions & related examples (if
         any)
       </p>
 
@@ -246,7 +246,7 @@ Definitions of <span class="font-bold text-[#A37ACC] dark:text-[#D2A6FF]">"consp
   Definitions of <span class="font-bold text-[#A37ACC] dark:text-[#D2A6FF]">"dilemma"</span>:
   
   <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">1.</span> A circumstance in which a choice must be made between two or more 
-     alternatives that seemequally undesirable.
+     alternatives that seem equally undesirable.
   
   <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">2.</span> Any difficult circumstance or problem.
   
@@ -273,7 +273,8 @@ Definitions of <span class="font-bold text-[#A37ACC] dark:text-[#D2A6FF]">"consp
 <span class="font-bold text-[#EBA400] dark:text-[#FFB454]">Did you remember it? (y/n):</span> n
 
 <span class="font-bold text-[#FA8532] dark:text-[#FF8F40]">No problem, this card will come back soon.</span>
-  
+<span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">Box 1 · next review tomorrow</span>
+
 <span class="text-[#787B80]/55 dark:text-[#ACB6BF]/45">───</span> <span class="font-bold text-[#4CBF99] dark:text-[#95E6CB]">Try again</span> <span class="text-[#787B80]/55 dark:text-[#ACB6BF]/45">────────────────────────────────────────────</span>
   
   <span class="font-bold text-[#A37ACC] dark:text-[#D2A6FF]">status quo</span>
@@ -286,9 +287,8 @@ Definitions of <span class="font-bold text-[#A37ACC] dark:text-[#D2A6FF]">"consp
      state of affairs.
   
 <span class="font-bold text-[#EBA400] dark:text-[#FFB454]">Did you remember it? (y/n):</span> y
-  
-<span class="font-bold text-[#86B300] dark:text-[#AAD94C]">Correct!</span>
-<span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">Box 1 · next review in 1 day</span></pre>
+
+<span class="font-bold text-[#86B300] dark:text-[#AAD94C]">Correct!</span></pre>
       </CodeCard>
 
       <p class="text-sm text-zinc-600 italic dark:text-zinc-400">
@@ -422,7 +422,7 @@ Definitions of <span class="font-bold text-[#A37ACC] dark:text-[#D2A6FF]">"statu
     <section class="mb-12">
       <p class="text-sm lg:text-base">
         Entering 3 starts the reviewing process in listening mode. The app will pick a random word
-        card from the deck and play the word's pronounciation:
+        card from the deck and play the word's pronunciation:
       </p>
       <CodeCard location="Terminal">
         <pre
@@ -484,7 +484,7 @@ Definitions of <span class="font-bold text-[#A37ACC] dark:text-[#D2A6FF]">"dilem
 
   <span class="text-[#4CBF99] dark:text-[#95E6CB]">Listen and type the word you hear.</span>
 
-<span class="text-[#22A4E6] dark:text-[#59C2FF]">The audio of is generating...</span>
+<span class="text-[#22A4E6] dark:text-[#59C2FF]">The audio is generating...</span>
 <span class="text-[#86B300] dark:text-[#AAD94C]">Audio saved successfully.</span>
 <span class="font-bold text-[#EBA400] dark:text-[#FFB454]">Your answer (r = replay, q = stop):</span> conspiracy
 
@@ -541,8 +541,8 @@ Definitions of <span class="font-bold text-[#A37ACC] dark:text-[#D2A6FF]">"dilem
       </CodeCard>
       <br />
       <p class="text-sm lg:text-base">
-        Press enter to start recording. Then, the app give 'Correct' or 'Incorrect' base on your
-        pronounciation.
+        Press enter to start recording. Then, the app gives 'Correct' or 'Incorrect' based on your
+        pronunciation.
       </p>
       <CodeCard location="Terminal">
         <pre
@@ -558,7 +558,7 @@ You said: <span class="text-[#A37ACC] dark:text-[#D2A6FF]">Conspiracy</span>
 <span class="font-bold text-[#86B300] dark:text-[#AAD94C]">Correct!</span>
 <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">Box 2 · next review in 2 days</span></pre>
       </CodeCard>
-      <p class="text=sm lg:text-base">
+      <p class="text-sm lg:text-base">
         1 pt for correct answer, 0 pts for wrong answer and the card will appear again in the end,
         as usual.
       </p>

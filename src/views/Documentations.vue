@@ -1,7 +1,7 @@
 <script setup>
 import { RouterView, RouterLink } from 'vue-router'
 
-import { ref, onMounted, onUnmounted, watch } from 'vue'
+import { ref, computed, onMounted, onUnmounted, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import { useTheme } from '@/composables/useTheme'
 import { useDocsSidebar } from '@/composables/useDocsSidebar'
@@ -41,7 +41,10 @@ onUnmounted(() => {
 const sidebarSections = [
   {
     heading: 'Essentials',
-    links: [{ label: 'Installation', to: '/docs/installation' }],
+    links: [
+      { label: 'Installation', to: '/docs/installation' },
+      { label: 'API keys and settings', to: '/docs/settings' },
+    ],
   },
   {
     heading: 'Main Application',
@@ -54,15 +57,36 @@ const sidebarSections = [
     heading: 'Card Deck',
     links: [
       { label: 'Lookup and add words to the deck', to: '/docs/card-deck/lookup-and-add' },
+      { label: 'Removing words from the deck', to: '/docs/card-deck/remove-words' },
+      { label: 'Editing a card', to: '/docs/card-deck/edit-card' },
       { label: 'Reviewing the card deck', to: '/docs/card-deck/review' },
       {
         label: 'Import word cards to deck by scanning documents',
         to: '/docs/card-deck/import-cards',
       },
+      { label: 'Exporting the deck to CSV', to: '/docs/card-deck/export' },
       { label: "View the card deck's status", to: '/docs/card-deck/view-deck' },
+      { label: 'Checking your progress', to: '/docs/card-deck/progress' },
+      { label: 'Practising one word', to: '/docs/card-deck/practise-one-word' },
     ],
   },
 ]
+
+// The page after the current one in the sidebar order, for the "Next" link at the bottom.
+const allLinks = sidebarSections.flatMap((section) => section.links)
+
+const currentIndex = computed(() => {
+  const normalizedPath = route.path.replace(/\/+$/, '')
+  return allLinks.findIndex((link) => link.to === normalizedPath)
+})
+
+const nextLink = computed(() =>
+  currentIndex.value === -1 ? null : allLinks[currentIndex.value + 1] ?? null,
+)
+
+const lastLink = computed(() =>
+  currentIndex.value === -1 ? null : allLinks[currentIndex.value - 1] ?? null,
+)
 </script>
 
 <template>
@@ -95,6 +119,35 @@ const sidebarSections = [
     <main class="min-w-0 flex-1 px-8 py-12 sm:px-15 lg:px-16 xl:px-24">
       <div class="max-w-4xl">
         <RouterView />
+
+        <!-- Next page -->
+        <nav
+          v-if="lastLink || nextLink"
+          aria-label="Page navigation"
+          class="mt-8 flex flex-col gap-4 border-t border-[#6666664f] pt-4 sm:flex-row sm:justify-between"
+        >
+          <RouterLink
+            v-if="lastLink"
+            :to="lastLink.to"
+            class="group flex flex-col items-start rounded-xl px-5 py-3 transition duration-200 ease-in-out hover:scale-105 hover:bg-orange-100/55 dark:hover:bg-zinc-800"
+          >
+            <span class="text-xs text-neutral-500 dark:text-neutral-400">Previous</span>
+            <span class="text-sm text-zinc-600 group-hover:underline lg:text-base dark:text-zinc-400">
+              &larr; {{ lastLink.label }}
+            </span>
+          </RouterLink>
+
+          <RouterLink
+            v-if="nextLink"
+            :to="nextLink.to"
+            class="group flex flex-col items-end rounded-xl px-5 py-3 transition duration-200 ease-in-out hover:scale-105 hover:bg-orange-100/55 sm:ml-auto dark:hover:bg-zinc-800"
+          >
+            <span class="text-xs text-neutral-500 dark:text-neutral-400">Next</span>
+            <span class="text-right text-sm text-zinc-600 group-hover:underline lg:text-base dark:text-zinc-400">
+              {{ nextLink.label }} &rarr;
+            </span>
+          </RouterLink>
+        </nav>
       </div>
     </main>
 
