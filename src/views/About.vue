@@ -2,6 +2,7 @@
 import { RouterLink } from "vue-router";
 import Card from "@/components/Card.vue";
 import AppFooter from "@/components/AppFooter.vue";
+import DocTable from "@/components/DocTable.vue";
 
 const REPO_URL = "https://github.com/ShingWong08/word-flashcard-vocab-learner";
 
@@ -32,6 +33,27 @@ const tools = [
     name: "Vue 3, Vite and Tailwind CSS",
     use: "this website",
   },
+];
+
+const contributionColumns = [{ label: "Person" }, { label: "Contributions" }];
+
+const contributionRows = [
+  [
+    "ShingWong08",
+    "Set up the project, packaging and the PyPI releases. Wrote speech-to-text, the dictionary lookup, the LLM connection and settings and the coloured terminal output. Also wrote most of the test suite and both READMEs.",
+  ],
+  [
+    "Kristy-Chong",
+    "Wrote the text-to-speech module. Worked on the Leitner scheduler, CSV export and user input, and added error handling for reading and saving the deck file.",
+  ],
+  [
+    "AndyTLY",
+    "Built vocabulary-scanner. In word-flashcard-vocab-learner, wrote the card and deck model, the review scheduler, the command-line entry point, the import feature, the remove words screen and the review, deck and import screens, and made the app repair hand-edited deck files.",
+  ],
+  [
+    "Chaus9587",
+    "Built the documentation website using vue.js, vite and hosted on Netlify. In the package, added example sentences to the dictionary lookups, optimised the code, updated how the deck is handled and made the demo notebook.",
+  ],
 ];
 </script>
 
@@ -67,29 +89,39 @@ const tools = [
   </div>
 
   <Card title="The team" contentClass="bg-orange-100/40 dark:bg-zinc-800/30">
-    <ul class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-      <li
-        v-for="member in team"
-        :key="member"
-        class="flex items-center gap-4 rounded-xl border border-[#6666664f] bg-white/50 px-4 py-4 dark:bg-zinc-800/45"
-      >
-        <span
-          class="flex size-10 shrink-0 items-center justify-center rounded-full bg-orange-300/80 font-semibold dark:bg-orange-400/80"
-          aria-hidden="true"
-          >{{ member[0] }}</span
+    <section>
+      <ul class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <li
+          v-for="member in team"
+          :key="member"
+          class="flex items-center gap-4 rounded-xl border border-[#6666664f] bg-white/50 px-4 py-4 dark:bg-zinc-800/45"
         >
-        <span>
-          <span class="block font-medium">{{ member }}</span>
-          <span class="block text-xs text-neutral-600 dark:text-neutral-400"
-            >Package author</span
+          <span
+            class="flex size-10 shrink-0 items-center justify-center rounded-full bg-orange-300/80 font-semibold dark:bg-orange-400/80"
+            aria-hidden="true"
+            >{{ member[0] }}</span
           >
-        </span>
-      </li>
-    </ul>
+          <span>
+            <span class="block font-medium">{{ member }}</span>
+            <span class="block text-xs text-neutral-600 dark:text-neutral-400"
+              >Package author</span
+            >
+          </span>
+        </li>
+      </ul>
+      <br />
+      <p class="text-sm text-zinc-600 italic dark:text-zinc-400">
+        This website was designed by Chaus9587.
+      </p>
+    </section>
     <br />
-    <p class="text-sm text-zinc-600 italic dark:text-zinc-400">
-      This website was designed by Chaus9587.
-    </p>
+    <section>
+      <DocTable
+        :columns="contributionColumns"
+        :rows="contributionRows"
+        class="lg:w-[60vw]"
+      ></DocTable>
+    </section>
   </Card>
 
   <Card title="Built with">

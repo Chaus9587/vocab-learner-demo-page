@@ -1,8 +1,4 @@
 <script setup>
-// A simple table for the docs pages, styled like CodeCard.
-// columns: [{ label: 'Variable', code: true }, { label: 'Used by' }]
-//   A column with code: true shows its cells in the code font and colour.
-// rows: [['LLM_API_KEY', 'Chinese translations ...'], ...]
 defineProps({
   columns: {
     type: Array,

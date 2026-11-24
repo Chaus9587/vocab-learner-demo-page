@@ -17,22 +17,19 @@ import CodeCard from "@/components/CodeCard.vue";
         <pre
           class="font-code whitespace-pre text-[#5C6166] dark:text-[#BFBDB6]"
         ><span class="font-bold text-[#EBA400] dark:text-[#FFB454]">Choose:</span> 4
-    
+
 <span class="text-[#787B80]/55 dark:text-[#ACB6BF]/45">───</span> <span class="font-bold text-[#4CBF99] dark:text-[#95E6CB]">Your deck: 5 words, 5 due today</span> <span class="text-[#787B80]/55 dark:text-[#ACB6BF]/45">────────────────────────</span>
 
   <span class="font-bold">#  Word    Box  Next review  Score  Chinese</span>
   <span class="text-[#787B80]/55 dark:text-[#ACB6BF]/45">───────────────────────────────────────────</span>
-  <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">1</span>  apple     1  <span class="font-bold text-[#EBA400] dark:text-[#FFB454]">due now</span>        0/0
-  <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">2</span>  banana    1  <span class="font-bold text-[#EBA400] dark:text-[#FFB454]">due now</span>        0/0
-  <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">3</span>  mango     1  <span class="font-bold text-[#EBA400] dark:text-[#FFB454]">due now</span>        0/0
-  <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">4</span>  orange    1  <span class="font-bold text-[#EBA400] dark:text-[#FFB454]">due now</span>        0/0
-  <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">5</span>  peach     1  <span class="font-bold text-[#EBA400] dark:text-[#FFB454]">due now</span>        0/0
+  <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">1</span>  apple     1  <span class="font-bold text-[#EBA400] dark:text-[#FFB454]">due now</span>        0/0  <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">蘋果</span>
+  <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">2</span>  banana    1  <span class="font-bold text-[#EBA400] dark:text-[#FFB454]">due now</span>        0/0  <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">香蕉</span>
+  <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">3</span>  mango     1  <span class="font-bold text-[#EBA400] dark:text-[#FFB454]">due now</span>        0/0  <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">芒果</span>
+  <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">4</span>  orange    1  <span class="font-bold text-[#EBA400] dark:text-[#FFB454]">due now</span>        0/0  <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">橙</span>
+  <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">5</span>  peach     1  <span class="font-bold text-[#EBA400] dark:text-[#FFB454]">due now</span>        0/0  <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">桃子</span>
 
   <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">Saved in: C:\Users\demo\.word_flashcard\deck.json</span></pre>
       </CodeCard>
-      <p class="text-sm text-zinc-600 italic dark:text-zinc-400">
-        Note: Chinese translation will be displayed in normal uses.
-      </p>
       <br />
       <p class="text-sm lg:text-base">
         After a review, some cards will be due earlier than other cards because
@@ -45,11 +42,11 @@ import CodeCard from "@/components/CodeCard.vue";
 
   <span class="font-bold">#  Word    Box  Next review  Score  Chinese</span>
   <span class="text-[#787B80]/55 dark:text-[#ACB6BF]/45">───────────────────────────────────────────</span>
-  <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">1</span>  apple     2  2026-11-26     1/1
-  <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">2</span>  banana    1  2026-11-25     0/1
-  <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">3</span>  mango     2  2026-11-26     1/1
-  <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">4</span>  orange    2  2026-11-26     1/1
-  <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">5</span>  peach     1  2026-11-25     0/1
+  <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">1</span>  apple     2  2026-11-26     1/1  <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">蘋果</span>
+  <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">2</span>  banana    1  2026-11-25     0/1  <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">香蕉</span>
+  <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">3</span>  mango     2  2026-11-26     1/1  <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">芒果</span>
+  <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">4</span>  orange    2  2026-11-26     1/1  <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">橙</span>
+  <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">5</span>  peach     1  2026-11-25     0/1  <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">桃子</span>
 
   <span class="text-[#787B80]/70 dark:text-[#ACB6BF]/55">Saved in: C:\Users\demo\.word_flashcard\deck.json</span></pre>
       </CodeCard>
